@@ -87,10 +87,6 @@
     }
   ],
   "installed_by_m007": [],
-  "reordered_future_group": [
-    "M087",
-    "M086",
-    "M085"
-  ],
+  "reordered_future_group": ["M087", "M086", "M085"],
   "no_current_order_exception": true
 }

@@ -68,10 +68,7 @@
       "license_id": "Public domain declaration",
       "evidence_url": "https://www.naturalearthdata.com/about/terms-of-use/",
       "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
-      "obligations": [
-        "preserve provenance",
-        "verify chosen release and contents"
-      ],
+      "obligations": ["preserve provenance", "verify chosen release and contents"],
       "review": "PENDING_RELEASE_SELECTION",
       "checked_at": "2026-09-14",
       "production_eligible": false
@@ -84,9 +81,7 @@
       "license_id": "No reusable map-content grant recorded",
       "evidence_url": "https://assets.press.princeton.edu/about_pup/PUP100/book/8hTalbert.pdf",
       "license_url": null,
-      "obligations": [
-        "obtain applicable permission before copying/digitizing map content"
-      ],
+      "obligations": ["obtain applicable permission before copying/digitizing map content"],
       "review": "NO_CONTENT_PERMISSION",
       "checked_at": "2026-09-14",
       "production_eligible": false
@@ -99,10 +94,7 @@
       "license_id": "CC-BY-4.0",
       "evidence_url": "https://www.nature.com/articles/s41562-024-01888-7",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
-      "obligations": [
-        "attribute and indicate changes",
-        "check third-party credit exceptions"
-      ],
+      "obligations": ["attribute and indicate changes", "check third-party credit exceptions"],
       "review": "PENDING_ASSET_SCOPE_REVIEW",
       "checked_at": "2026-09-14",
       "production_eligible": false
@@ -115,9 +107,7 @@
       "license_id": null,
       "evidence_url": "https://www.nhm-wien.ac.at/hallstatt/en/site",
       "license_url": null,
-      "obligations": [
-        "no bulk text or image reuse approved; citation only"
-      ],
+      "obligations": ["no bulk text or image reuse approved; citation only"],
       "review": "NO_CONTENT_PERMISSION",
       "checked_at": "2026-09-14",
       "production_eligible": false
@@ -130,9 +120,7 @@
       "license_id": null,
       "evidence_url": "https://www.unesco.org/en/silk-roads/about-silk-roads?hub=196704",
       "license_url": null,
-      "obligations": [
-        "verify asset-specific reuse grant"
-      ],
+      "obligations": ["verify asset-specific reuse grant"],
       "review": "NO_CONTENT_PERMISSION",
       "checked_at": "2026-09-14",
       "production_eligible": false
@@ -145,20 +133,13 @@
       "license_id": "Project internal fixture policy",
       "evidence_url": "DATA_LICENSING.md",
       "license_url": null,
-      "obligations": [
-        "never expose as reviewed historical data"
-      ],
+      "obligations": ["never expose as reviewed historical data"],
       "review": "INTERNAL_ONLY",
       "checked_at": "2026-09-14",
       "production_eligible": false
     }
   ],
-  "allowed_classes": [
-    "PUBLIC DOMAIN",
-    "CC0",
-    "CC-BY",
-    "ODbL"
-  ],
+  "allowed_classes": ["PUBLIC DOMAIN", "CC0", "CC-BY", "ODbL"],
   "required_fields": [
     "source_id",
     "version",

@@ -5,10 +5,7 @@
       "id": "pleiades-727070",
       "kind": "dataset",
       "title": "Alexandria: a Pleiades place resource",
-      "creators": [
-        "A. Bernand",
-        "Pleiades contributors"
-      ],
+      "creators": ["A. Bernand", "Pleiades contributors"],
       "publisher": "Pleiades",
       "url": "https://pleiades.stoa.org/places/727070",
       "version": "page modified 2026-08-05; accessed 2026-09-14",
@@ -20,9 +17,7 @@
       "id": "nhm-hallstatt",
       "kind": "museum",
       "title": "Hallstatt: Site",
-      "creators": [
-        "Natural History Museum Vienna"
-      ],
+      "creators": ["Natural History Museum Vienna"],
       "publisher": "Natural History Museum Vienna",
       "url": "https://www.nhm-wien.ac.at/hallstatt/en/site",
       "version": "accessed 2026-09-14",
@@ -34,12 +29,7 @@
       "id": "gretzinger-2024",
       "kind": "journal",
       "title": "Evidence for dynastic succession among early Celtic elites in Central Europe",
-      "creators": [
-        "J. Gretzinger",
-        "F. Schmitt",
-        "A. Mötsch",
-        "et al."
-      ],
+      "creators": ["J. Gretzinger", "F. Schmitt", "A. Mötsch", "et al."],
       "publisher": "Nature Human Behaviour",
       "year": 2024,
       "volume": "8",
@@ -56,9 +46,7 @@
       "kind": "historical_atlas",
       "medium": "book",
       "title": "Barrington Atlas of the Greek and Roman World",
-      "creators": [
-        "Richard J. A. Talbert (editor)"
-      ],
+      "creators": ["Richard J. A. Talbert (editor)"],
       "publisher": "Princeton University Press",
       "year": 2000,
       "url": "https://assets.press.princeton.edu/about_pup/PUP100/book/8hTalbert.pdf",
@@ -72,9 +60,7 @@
       "id": "unesco-silk",
       "kind": "web",
       "title": "About the Silk Roads",
-      "creators": [
-        "UNESCO"
-      ],
+      "creators": ["UNESCO"],
       "publisher": "UNESCO",
       "url": "https://www.unesco.org/en/silk-roads/about-silk-roads?hub=196704",
       "version": "accessed 2026-09-14",
@@ -86,10 +72,7 @@
       "id": "historical-basemaps",
       "kind": "dataset",
       "title": "Historical Basemaps",
-      "creators": [
-        "André Ourednik",
-        "repository contributors"
-      ],
+      "creators": ["André Ourednik", "repository contributors"],
       "publisher": "GitHub repository",
       "url": "https://github.com/aourednik/historical-basemaps",
       "version": "ce213385c641acd9196b7d81177328f94496df00",
@@ -155,9 +138,7 @@
       "id": "alexandria-kind",
       "text": "Alexandria is described as a settlement and port.",
       "kind": "SOURCE_REPORT",
-      "citation_ids": [
-        "cit-a-kind"
-      ],
+      "citation_ids": ["cit-a-kind"],
       "revision_id": "rev-1",
       "publication_status": "RESEARCH_EXAMPLE_NOT_PUBLISHED"
     },
@@ -165,9 +146,7 @@
       "id": "alexandria-foundation",
       "text": "Pleiades reports a foundation in 332/331 BCE.",
       "kind": "SOURCE_REPORT",
-      "citation_ids": [
-        "cit-a-date"
-      ],
+      "citation_ids": ["cit-a-date"],
       "revision_id": "rev-1",
       "publication_status": "RESEARCH_EXAMPLE_NOT_PUBLISHED"
     },
@@ -175,9 +154,7 @@
       "id": "alexandria-point",
       "text": "Pleiades supplies representative longitude 29.909773 and latitude 31.201435.",
       "kind": "SOURCE_REPORT",
-      "citation_ids": [
-        "cit-a-point"
-      ],
+      "citation_ids": ["cit-a-point"],
       "revision_id": "rev-1",
       "publication_status": "RESEARCH_EXAMPLE_NOT_PUBLISHED"
     },
@@ -185,9 +162,7 @@
       "id": "hallstatt-name",
       "text": "The Hallstatt site gave its name to an archaeological culture.",
       "kind": "SOURCE_REPORT",
-      "citation_ids": [
-        "cit-hallstatt"
-      ],
+      "citation_ids": ["cit-hallstatt"],
       "revision_id": "rev-1",
       "publication_status": "RESEARCH_EXAMPLE_NOT_PUBLISHED"
     },
@@ -195,9 +170,7 @@
       "id": "culture-terms",
       "text": "Hallstatt and La Tène are discussed as archaeological cultures.",
       "kind": "SOURCE_REPORT",
-      "citation_ids": [
-        "cit-culture"
-      ],
+      "citation_ids": ["cit-culture"],
       "revision_id": "rev-1",
       "publication_status": "RESEARCH_EXAMPLE_NOT_PUBLISHED"
     },
@@ -205,9 +178,7 @@
       "id": "silk-network",
       "text": "The Silk Roads are described as interconnected routes of exchange.",
       "kind": "SOURCE_REPORT",
-      "citation_ids": [
-        "cit-silk"
-      ],
+      "citation_ids": ["cit-silk"],
       "revision_id": "rev-1",
       "publication_status": "RESEARCH_EXAMPLE_NOT_PUBLISHED"
     }
@@ -240,14 +211,7 @@
       "review_status": "SOURCE_CHECKED_NOT_HISTORIAN_REVIEWED"
     }
   ],
-  "citation_formats": [
-    "book",
-    "journal",
-    "dataset",
-    "historical_atlas",
-    "museum",
-    "web"
-  ],
+  "citation_formats": ["book", "journal", "dataset", "historical_atlas", "museum", "web"],
   "negative_cases": [
     "missing-citation",
     "dangling-source",

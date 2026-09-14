@@ -19,11 +19,28 @@ if (state === 'PASS') {
 }
 const row = new RegExp('^(\\| ' + id + ' \\| [^|]+ \\| )[^|]+( \\| )[^\\r\\n]*', 'm');
 assert.ok(row.test(ledger));
-ledger = ledger.replace(row, '$1' + state + '$2' + (state === 'PASS' ? '[' + id + ' verification](' + id + '_VERIFICATION.md)' : summary || 'Gate in progress') + ' |');
-const headline = state === 'PASS'
-  ? 'Most recent completed module: **' + id + ': PASS**. Next eligible module: **M' + String(number + 1).padStart(3, '0') + ': NOT_STARTED**.'
-  : 'Active module: **' + id + ': ' + state + '**. ' + summary;
+ledger = ledger.replace(
+  row,
+  '$1' +
+    state +
+    '$2' +
+    (state === 'PASS'
+      ? '[' + id + ' verification](' + id + '_VERIFICATION.md)'
+      : summary || 'Gate in progress') +
+    ' |',
+);
+const headline =
+  state === 'PASS'
+    ? 'Most recent completed module: **' +
+      id +
+      ': PASS**. Next eligible module: **M' +
+      String(number + 1).padStart(3, '0') +
+      ': NOT_STARTED**.'
+    : 'Active module: **' + id + ': ' + state + '**. ' + summary;
 ledger = ledger.replace(/^Most recent completed module:.*$|^Active module:.*$/m, headline);
-ledger = ledger.replace('No downstream module has begun.', 'Modules proceed sequentially within the user-authorized M002–M011 batch; M012 and later remain NOT_STARTED.');
+ledger = ledger.replace(
+  'No downstream module has begun.',
+  'Modules proceed sequentially within the user-authorized M002–M011 batch; M012 and later remain NOT_STARTED.',
+);
 fs.writeFileSync(ledgerPath, ledger);
 process.stdout.write(id + ' ' + state + '\n');

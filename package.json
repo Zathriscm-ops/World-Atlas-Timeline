@@ -1,19 +1,31 @@
 {
-    "name":  "world-atlas",
-    "version":  "0.0.0",
-    "private":  true,
-    "license":  "UNLICENSED",
-    "type":  "module",
-    "packageManager":  "pnpm@10.34.5",
-    "engines":  {
-                    "node":  "24.18.0"
-                },
-    "scripts":  {
-                    "test:planning":  "node scripts/planning/verify.mjs 10",
-                    "test:repository":  "node scripts/repository/smoke.mjs",
-                    "test:install":  "node scripts/repository/install-proof.mjs"
-                },
-    "devDependencies":  {
-                            "zod":  "4.6.5"
-                        }
+  "name": "world-atlas",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": "24.18.0"
+  },
+  "scripts": {
+    "test:planning": "node scripts/planning/verify.mjs 10",
+    "test:repository": "node scripts/repository/smoke.mjs",
+    "test:install": "node scripts/repository/install-proof.mjs",
+    "typecheck": "tsc --project tsconfig.json",
+    "format:check": "prettier --check \"**/*.{mjs,js,ts,tsx,json,yaml,yml}\"",
+    "lint": "eslint . --max-warnings 0",
+    "test:toolchain": "node scripts/quality/toolchain-proof.mjs",
+    "verify": "node scripts/quality/verify.mjs",
+    "format": "prettier --write \"**/*.{mjs,js,ts,tsx,json,yaml,yml}\""
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.10.0",
+    "globals": "17.12.0",
+    "prettier": "3.9.6",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.70.0",
+    "zod": "4.6.5"
+  }
 }

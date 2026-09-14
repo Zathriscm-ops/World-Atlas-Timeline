@@ -17,3 +17,4 @@ test-results/
 data/research/raw/
 .codex/
 .agents/
+tests/toolchain/probe-*/

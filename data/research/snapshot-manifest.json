@@ -1,30 +1,30 @@
 ﻿[
-    {
-        "bytes":  1182425,
-        "roman_features":  [
-                               {
-                                   "geometry_type":  "MultiPolygon",
-                                   "name":  "Roman Empire"
-                               }
-                           ],
-        "year":  100,
-        "sha256":  "8E8FB37080B108E26E3FDBA14423E4466F4D9D7F0451DEE22DF9500D7BB83657",
-        "production_eligible":  false,
-        "url":  "https://raw.githubusercontent.com/aourednik/historical-basemaps/ce213385c641acd9196b7d81177328f94496df00/geojson/world_100.geojson",
-        "feature_count":  440
-    },
-    {
-        "bytes":  1165200,
-        "roman_features":  [
-                               {
-                                   "geometry_type":  "MultiPolygon",
-                                   "name":  "Roman Empire"
-                               }
-                           ],
-        "year":  200,
-        "sha256":  "CC20376E6097A5DFFBB63CEB2104C479FEA01644F22FB5ED66570EB6178CF217",
-        "production_eligible":  false,
-        "url":  "https://raw.githubusercontent.com/aourednik/historical-basemaps/ce213385c641acd9196b7d81177328f94496df00/geojson/world_200.geojson",
-        "feature_count":  354
-    }
+  {
+    "bytes": 1182425,
+    "roman_features": [
+      {
+        "geometry_type": "MultiPolygon",
+        "name": "Roman Empire"
+      }
+    ],
+    "year": 100,
+    "sha256": "8E8FB37080B108E26E3FDBA14423E4466F4D9D7F0451DEE22DF9500D7BB83657",
+    "production_eligible": false,
+    "url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/ce213385c641acd9196b7d81177328f94496df00/geojson/world_100.geojson",
+    "feature_count": 440
+  },
+  {
+    "bytes": 1165200,
+    "roman_features": [
+      {
+        "geometry_type": "MultiPolygon",
+        "name": "Roman Empire"
+      }
+    ],
+    "year": 200,
+    "sha256": "CC20376E6097A5DFFBB63CEB2104C479FEA01644F22FB5ED66570EB6178CF217",
+    "production_eligible": false,
+    "url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/ce213385c641acd9196b7d81177328f94496df00/geojson/world_200.geojson",
+    "feature_count": 354
+  }
 ]

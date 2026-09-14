@@ -1,0 +1,29 @@
+{
+  "module": "M011",
+  "result": "PASS",
+  "node": "v24.18.0",
+  "baseline_typecheck": "PASS",
+  "restored_typecheck": "PASS",
+  "type_errors": {
+    "exit": 2,
+    "diagnostics": [
+      "TS2322",
+      "TS18047"
+    ],
+    "detected": true
+  },
+  "lint_errors": {
+    "exit": 1,
+    "diagnostics": [
+      "no-debugger",
+      "no-undef"
+    ],
+    "detected": true
+  },
+  "format_errors": {
+    "exit": 1,
+    "detected": true,
+    "positive_control_exit": 0
+  },
+  "checked_at_utc": "2026-09-14T12:39:51.301Z"
+}

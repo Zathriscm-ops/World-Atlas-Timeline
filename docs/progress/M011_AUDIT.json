@@ -1,0 +1,15 @@
+{
+  "module": "M011",
+  "command": "pnpm audit --audit-level high --json",
+  "result": "PASS",
+  "checked_at": "2026-09-14",
+  "vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0
+  },
+  "reported_total_dependencies": 103,
+  "scope": "Registry advisory audit of installed dependency set; not a production security assessment."
+}

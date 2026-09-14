@@ -42,55 +42,28 @@
       "display": "500 CE"
     }
   ],
-  "invalid_inputs": [
-    "0 BCE",
-    "0 CE",
-    "-1 BCE",
-    "-1 CE",
-    "1.5 CE",
-    "117",
-    "tomorrow"
-  ],
+  "invalid_inputs": ["0 BCE", "0 CE", "-1 BCE", "-1 CE", "1.5 CE", "117", "tomorrow"],
   "interval_cases": [
     {
       "id": "exact-year",
       "start": 117,
       "end": 118,
-      "active": [
-        117
-      ],
-      "inactive": [
-        116,
-        118
-      ]
+      "active": [117],
+      "inactive": [116, 118]
     },
     {
       "id": "bce-ce",
       "start": 0,
       "end": 2,
-      "active": [
-        0,
-        1
-      ],
-      "inactive": [
-        -1,
-        2
-      ]
+      "active": [0, 1],
+      "inactive": [-1, 2]
     },
     {
       "id": "mvp-domain",
       "start": -499,
       "end": 501,
-      "active": [
-        -499,
-        0,
-        1,
-        500
-      ],
-      "inactive": [
-        -500,
-        501
-      ]
+      "active": [-499, 0, 1, 500],
+      "inactive": [-500, 501]
     }
   ],
   "expressions": [
@@ -147,14 +120,8 @@
     "start_max": 110,
     "end_min": 150,
     "end_max": 160,
-    "possible": [
-      100,
-      160
-    ],
-    "certain": [
-      110,
-      150
-    ]
+    "possible": [100, 160],
+    "certain": [110, 150]
   },
   "playback_unit": "historical_years_per_real_second"
 }

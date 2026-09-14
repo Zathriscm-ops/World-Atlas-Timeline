@@ -3,19 +3,13 @@
   "status": "TARGETS_NOT_RUNTIME_MEASUREMENTS",
   "profiles": {
     "desktop": {
-      "viewport": [
-        1440,
-        900
-      ],
+      "viewport": [1440, 900],
       "network_mbps": 10,
       "rtt_ms": 80,
       "cpu_slowdown": 1
     },
     "mobile": {
-      "viewport": [
-        390,
-        844
-      ],
+      "viewport": [390, 844],
       "network_mbps": 10,
       "rtt_ms": 80,
       "cpu_slowdown": 4
@@ -52,11 +46,7 @@
     "temporal_states": 10000,
     "vertices": 100000,
     "playback_seconds": 30,
-    "playback_years_per_real_second": [
-      1,
-      10,
-      100
-    ],
+    "playback_years_per_real_second": [1, 10, 100],
     "percentile": "nearest_rank_no_outlier_removal"
   },
   "cost": {
@@ -68,11 +58,7 @@
       "development": 0,
       "contingency": 25
     },
-    "actual_alert_percent": [
-      50,
-      80,
-      100
-    ],
+    "actual_alert_percent": [50, 80, 100],
     "forecast_alert_percent": 100,
     "billing_basis": "all project AWS cost before tax; no free tier assumption",
     "status": "ALLOCATION_NOT_PROVIDER_QUOTE"

@@ -1,0 +1,11 @@
+node_modules/
+.cache/
+.verification/
+.tools/
+dist/
+coverage/
+data/research/raw/
+GATED_DEVELOPMENT_MASTER_PLAN.md
+docs/archive/
+docs/progress/
+pnpm-lock.yaml
