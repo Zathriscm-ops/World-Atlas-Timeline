@@ -1,0 +1,18 @@
+{
+    "installed_dependency":  "zod@4.6.5",
+    "working_tree_after_checks":  [
+                                      " M docs/progress/checks/M008.json"
+                                  ],
+    "planning_regression":  "PASS",
+    "node":  "v24.18.0",
+    "result":  "PASS",
+    "module":  "M009",
+    "install":  "pnpm install --frozen-lockfile",
+    "tested_commit":  "43bc57ed6cdda4ae894cf7e78703ce2ab3f33935",
+    "repository_smoke":  "PASS",
+    "pnpm":  "10.34.5",
+    "platform":  "Windows x64",
+    "clone":  "git clone --no-local",
+    "scope":  "Fresh source clone and new project store on this host; not a newly provisioned operating system",
+    "lock_sha256":  "57FAEA63213D061AD3CED91469023DAC3F39866BF88528F5E14C1F287DFBFFD5"
+}

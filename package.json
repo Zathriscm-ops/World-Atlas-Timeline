@@ -9,7 +9,7 @@
     "node": "24.18.0"
   },
   "scripts": {
-    "test:planning": "node scripts/planning/verify.mjs 8",
+    "test:planning": "node scripts/planning/verify.mjs 9",
     "test:repository": "node scripts/repository/smoke.mjs"
   },
   "devDependencies": {

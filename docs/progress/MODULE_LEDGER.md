@@ -2,7 +2,7 @@
 
 Governing roadmap: [Gated Development Master Plan](../../GATED_DEVELOPMENT_MASTER_PLAN.md).
 
-Active module: **M009: IN_PROGRESS**. 
+Most recent completed module: **M009: PASS**. Next eligible module: **M010: NOT_STARTED**.
 
 Modules proceed sequentially within the user-authorized M002–M011 batch; M012 and later remain NOT_STARTED. Gates are evaluated sequentially; discussion in an earlier document does not earn a PASS.
 
@@ -16,7 +16,7 @@ Modules proceed sequentially within the user-authorized M002–M011 batch; M012 
 | M006 | Data Licensing Policy | PASS | [M006 verification](M006_VERIFICATION.md) |
 | M007 | Technology Architecture Decision | PASS | [M007 verification](M007_VERIFICATION.md) |
 | M008 | Quality, Performance and Cost Budgets | PASS | [M008 verification](M008_VERIFICATION.md) |
-| M009 | Repository Architecture | IN_PROGRESS | Gate in progress |
+| M009 | Repository Architecture | PASS | [M009 verification](M009_VERIFICATION.md) |
 | M010 | Package and Dependency Governance | NOT_STARTED | — |
 | M011 | Code Quality Toolchain | NOT_STARTED | — |
 | M012 | Continuous Integration Foundation | NOT_STARTED | — |

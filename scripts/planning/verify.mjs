@@ -203,9 +203,21 @@ if (through >= 8) check('M008-measurable-budgets', () => {
   assert.ok(b.limits.initial_transfer_gzip_bytes*8/(b.profiles.mobile.network_mbps*1000000)*1000 < b.limits.initial_load_p95_ms);
   assert.equal(b.workload.api_measured_requests_per_endpoint,1000);
 });
+
+if (through >= 9) check('M009-fresh-clone-evidence', () => {
+  const e=json('docs/progress/M009_INSTALL.json');
+  assert.equal(e.result,'PASS');
+  assert.equal(e.repository_smoke,'PASS');
+  assert.equal(e.planning_regression,'PASS');
+  assert.equal(e.pnpm,'10.34.5');
+  assert.match(e.tested_commit,/^[a-f0-9]{40}$/);
+  assert.match(e.lock_sha256,/^[A-F0-9]{64}$/);
+  for (const dir of ['apps','packages','database','data','infra','docs','scripts','tests']) assert.ok(fs.statSync(dir).isDirectory());
+  assert.equal(json('package.json').private,true);
+});
 /* MODULE CHECKS */
 const report = { through, checked_at_utc: new Date().toISOString(), checks, scope: 'Planning contracts and fixtures; no production GIS/runtime certification.' };
 fs.mkdirSync('docs/progress/checks', { recursive: true });
-fs.writeFileSync('docs/progress/checks/M' + String(through).padStart(3, '0') + '.json', JSON.stringify(report, null, 2) + '\n');
+if (process.argv.includes('--record')) fs.writeFileSync('docs/progress/checks/M' + String(through).padStart(3, '0') + '.json', JSON.stringify(report, null, 2) + '\n');
 for (const result of checks) process.stdout.write(result.result + ' ' + result.id + (result.error ? ': ' + result.error : '') + '\n');
 process.exitCode = checks.some((item) => item.result === 'FAIL') ? 1 : 0;
