@@ -2,9 +2,9 @@
 
 Governing roadmap: [Gated Development Master Plan](../../GATED_DEVELOPMENT_MASTER_PLAN.md).
 
-Most recent completed module: **M011: PASS**. Next eligible module: **M012: NOT_STARTED**.
+Active module: **M012: IN_PROGRESS**. 
 
-Modules proceed sequentially within the user-authorized M002–M011 batch; M012 and later remain NOT_STARTED. Gates are evaluated sequentially; discussion in an earlier document does not earn a PASS.
+Modules proceed sequentially within the user-authorized M012–M021 batch; M022 and later remain NOT_STARTED. Gates are evaluated sequentially; discussion in an earlier document does not earn a PASS.
 
 | Module | Definition | Status | Evidence |
 |---|---|---|---|
@@ -19,7 +19,7 @@ Modules proceed sequentially within the user-authorized M002–M011 batch; M012 
 | M009 | Repository Architecture | PASS | [M009 verification](M009_VERIFICATION.md) |
 | M010 | Package and Dependency Governance | PASS | [M010 verification](M010_VERIFICATION.md) |
 | M011 | Code Quality Toolchain | PASS | [M011 verification](M011_VERIFICATION.md) |
-| M012 | Continuous Integration Foundation | NOT_STARTED | — |
+| M012 | Continuous Integration Foundation | IN_PROGRESS | Gate in progress |
 | M013 | Local PostgreSQL/PostGIS Environment | NOT_STARTED | — |
 | M014 | Database Migration System | NOT_STARTED | — |
 | M015 | Configuration and Secret Management | NOT_STARTED | — |

@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "rootDir": "scripts/ci",
+    "outDir": "dist/ci",
+    "declaration": true,
+    "sourceMap": true
+  },
+  "include": ["scripts/ci/pipeline.ts"],
+  "exclude": []
+}

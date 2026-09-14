@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 const number = Number(process.argv[2]);
 const state = process.argv[3];
 const summary = process.argv[4] ?? '';
-assert.ok(number >= 2 && number <= 11 && Number.isInteger(number));
+assert.ok(number >= 2 && number <= 21 && Number.isInteger(number));
 assert.ok(['IN_PROGRESS', 'PASS', 'BLOCKED'].includes(state));
 const id = 'M' + String(number).padStart(3, '0');
 const previous = 'M' + String(number - 1).padStart(3, '0');
@@ -40,7 +40,7 @@ const headline =
 ledger = ledger.replace(/^Most recent completed module:.*$|^Active module:.*$/m, headline);
 ledger = ledger.replace(
   'No downstream module has begun.',
-  'Modules proceed sequentially within the user-authorized M002–M011 batch; M012 and later remain NOT_STARTED.',
+  'Modules proceed sequentially within the user-authorized M012–M021 batch; M022 and later remain NOT_STARTED.',
 );
 fs.writeFileSync(ledgerPath, ledger);
 process.stdout.write(id + ' ' + state + '\n');

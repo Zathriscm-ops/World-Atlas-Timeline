@@ -1,0 +1,46 @@
+name: Atlas CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: atlas-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  foundation:
+    name: Foundation (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version-file: .node-version
+      - name: Install, lint, typecheck, unit tests, build and regression
+        run: npm exec --yes --package=pnpm@10.34.5 -- pnpm ci:check
+
+  required:
+    name: Required
+    if: ${{ always() }}
+    needs: [foundation]
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Require successful matrix
+        env:
+          RESULT: ${{ needs.foundation.result }}
+        run: node -e "if (process.env.RESULT !== 'success') process.exit(1)"

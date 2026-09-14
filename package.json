@@ -17,15 +17,23 @@
     "lint": "eslint . --max-warnings 0",
     "test:toolchain": "node scripts/quality/toolchain-proof.mjs",
     "verify": "node scripts/quality/verify.mjs",
-    "format": "prettier --write \"**/*.{mjs,js,ts,tsx,json,yaml,yml}\""
+    "format": "prettier --write \"**/*.{mjs,js,ts,tsx,json,yaml,yml}\"",
+    "test:unit": "vitest run",
+    "build": "node scripts/ci/build.mjs",
+    "ci:check": "node scripts/ci/run.mjs",
+    "test:ci-failures": "node scripts/ci/failure-proof.mjs"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
+    "@types/node": "24.13.4",
     "eslint": "10.10.0",
     "globals": "17.12.0",
     "prettier": "3.9.6",
     "typescript": "6.0.3",
     "typescript-eslint": "8.70.0",
+    "vite": "7.3.6",
+    "vitest": "4.1.11",
+    "yaml": "2.9.1",
     "zod": "4.6.5"
   }
 }
