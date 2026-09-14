@@ -25,3 +25,7 @@ Git hooks are optional here: no hook manager or automatic local Git configuratio
 No production build, domain coverage number, browser suite, PostGIS integration, release security scan or CI pipeline is claimed at M011. Their modules add checks to the common command as real components appear. There is deliberately no no-op build or verify:release command. The current 80/90% coverage targets remain N/A until production code exists.
 
 References: [TypeScript strict](https://www.typescriptlang.org/tsconfig/strict.html), [typescript-eslint setup](https://typescript-eslint.io/getting-started/), [Prettier configuration](https://prettier.io/docs/configuration). See DEPENDENCY_POLICY.md for exact-version updates.
+
+## M012 extension
+
+The current pnpm verify command also runs Vitest unit tests and the compiled CI tooling build. pnpm ci:check runs the full frozen-install pipeline. The GitHub workflow is implemented and locally tested on Windows/Linux; hosted pull-request enforcement remains BLOCKED as recorded in docs/progress/M012_VERIFICATION.md. Earlier M011 statements describe that completed baseline.

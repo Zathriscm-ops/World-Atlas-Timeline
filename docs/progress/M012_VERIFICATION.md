@@ -10,6 +10,7 @@ Module status: BLOCKED on hosted pull-request enforcement. Local implementation 
 
 - M012_LOCAL.json: a fresh Windows clone passed every pipeline stage; five actual failing-tool probes (stale lockfile, lint error, type error, failed unit assertion and invalid build target) each failed CI at exactly the intended stage without running later stages.
 - M012_LINUX.json: an empty-store Linux container ran the same committed pipeline successfully using Node 24.18.0 and the recorded official image digest.
+- M012_INSTALL.json: two additional fresh Windows clones passed pnpm verify, produced identical actual dependency graphs, preserved the frozen lockfile and rejected stale-lock/runtime mismatches.
 - Thirteen unit tests passed, including per-stage propagation, interrupted/failed launch behavior, empty-pipeline rejection and pull-request workflow wiring.
 - All existing M001–M011 regression, formatting and toolchain probes passed. The emitted CI JavaScript was executed successfully.
 - Final dependency audit reported zero advisories in every severity category.
