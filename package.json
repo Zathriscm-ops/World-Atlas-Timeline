@@ -1,18 +1,19 @@
 {
-  "name": "world-atlas",
-  "version": "0.0.0",
-  "private": true,
-  "license": "UNLICENSED",
-  "type": "module",
-  "packageManager": "pnpm@10.34.5",
-  "engines": {
-    "node": "24.18.0"
-  },
-  "scripts": {
-    "test:planning": "node scripts/planning/verify.mjs 9",
-    "test:repository": "node scripts/repository/smoke.mjs"
-  },
-  "devDependencies": {
-    "zod": "4.6.5"
-  }
+    "name":  "world-atlas",
+    "version":  "0.0.0",
+    "private":  true,
+    "license":  "UNLICENSED",
+    "type":  "module",
+    "packageManager":  "pnpm@10.34.5",
+    "engines":  {
+                    "node":  "24.18.0"
+                },
+    "scripts":  {
+                    "test:planning":  "node scripts/planning/verify.mjs 9",
+                    "test:repository":  "node scripts/repository/smoke.mjs",
+                    "test:install":  "node scripts/repository/install-proof.mjs"
+                },
+    "devDependencies":  {
+                            "zod":  "4.6.5"
+                        }
 }
