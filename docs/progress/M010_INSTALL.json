@@ -1,0 +1,123 @@
+{
+  "module": "M010",
+  "result": "PASS",
+  "tested_commit": "d3c89a72f9c6add82db4e4b0c41daf5b714f502e",
+  "node": "v24.18.0",
+  "pnpm": "10.34.5",
+  "platform": "win32-x64",
+  "method": "Two fresh local Git clones and independent stores on the current host",
+  "installs": [
+    {
+      "label": "a",
+      "lock_sha256": "57faea63213d061ad3ced91469023dac3f39866bf88528f5e14c1f287dfbffd5",
+      "graph_sha256": "4980b21f87fc87847527b269eb3ade70075dc8fd74be932c6acc2690a0ce43a3",
+      "graph": [
+        {
+          "devDependencies": {
+            "zod": {
+              "from": "zod",
+              "resolved": "https://registry.npmjs.org/zod/-/zod-4.6.5.tgz",
+              "version": "4.6.5"
+            }
+          },
+          "name": "world-atlas",
+          "private": true,
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/api",
+          "private": true,
+          "unsavedDependencies": {
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/contracts",
+          "private": true,
+          "unsavedDependencies": {
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/web",
+          "private": true,
+          "unsavedDependencies": {
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        }
+      ],
+      "install_exit": 0,
+      "directory": ".verification\\install-1789389298152\\a"
+    },
+    {
+      "label": "b",
+      "lock_sha256": "57faea63213d061ad3ced91469023dac3f39866bf88528f5e14c1f287dfbffd5",
+      "graph_sha256": "4980b21f87fc87847527b269eb3ade70075dc8fd74be932c6acc2690a0ce43a3",
+      "graph": [
+        {
+          "devDependencies": {
+            "zod": {
+              "from": "zod",
+              "resolved": "https://registry.npmjs.org/zod/-/zod-4.6.5.tgz",
+              "version": "4.6.5"
+            }
+          },
+          "name": "world-atlas",
+          "private": true,
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/api",
+          "private": true,
+          "unsavedDependencies": {
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/contracts",
+          "private": true,
+          "unsavedDependencies": {
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/web",
+          "private": true,
+          "unsavedDependencies": {
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        }
+      ],
+      "install_exit": 0,
+      "directory": ".verification\\install-1789389298152\\b"
+    }
+  ],
+  "graph_equal": true,
+  "stale_lock_rejected": true,
+  "unsupported_node_rejected": true,
+  "checked_at_utc": "2026-09-14T12:35:06.129Z"
+}

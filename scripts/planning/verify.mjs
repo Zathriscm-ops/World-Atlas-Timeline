@@ -215,6 +215,20 @@ if (through >= 9) check('M009-fresh-clone-evidence', () => {
   for (const dir of ['apps','packages','database','data','infra','docs','scripts','tests']) assert.ok(fs.statSync(dir).isDirectory());
   assert.equal(json('package.json').private,true);
 });
+
+if (through >= 10) check('M010-dependency-governance', () => {
+  const p=json('package.json'), e=json('docs/progress/M010_INSTALL.json');
+  assert.equal(p.packageManager,'pnpm@10.34.5');
+  assert.equal(p.engines.node,read('.node-version').trim());
+  assert.ok(read('.npmrc').includes('engine-strict=true'));
+  assert.ok(read('pnpm-workspace.yaml').includes('strictPeerDependencies: true'));
+  for (const version of Object.values(p.devDependencies)) assert.match(version,/^\d+\.\d+\.\d+$/);
+  for (const alternate of ['package-lock.json','yarn.lock']) assert.equal(fs.existsSync(alternate),false);
+  assert.equal(e.result,'PASS'); assert.equal(e.installs.length,2);
+  assert.equal(e.graph_equal,true); assert.equal(e.stale_lock_rejected,true); assert.equal(e.unsupported_node_rejected,true);
+  assert.equal(e.installs[0].graph_sha256,e.installs[1].graph_sha256);
+  assert.equal(e.installs[0].lock_sha256,e.installs[1].lock_sha256);
+});
 /* MODULE CHECKS */
 const report = { through, checked_at_utc: new Date().toISOString(), checks, scope: 'Planning contracts and fixtures; no production GIS/runtime certification.' };
 fs.mkdirSync('docs/progress/checks', { recursive: true });
