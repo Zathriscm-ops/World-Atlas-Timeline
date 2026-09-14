@@ -1,0 +1,61 @@
+{
+  "module": "M012",
+  "platform": "linux-x64",
+  "node": "v24.18.0",
+  "tested_commit": "229908baf7a287ce052eb2716e668db21898a54b",
+  "image": "node@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d",
+  "result": "PASS",
+  "exit": 0,
+  "pipeline": {
+    "status": "PASS",
+    "exitCode": 0,
+    "completed": [
+      {
+        "name": "install",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "unit-tests",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "build",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "format",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "planning",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "repository",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "toolchain",
+        "exitCode": 0,
+        "status": "PASS"
+      }
+    ]
+  },
+  "checked_at_utc": "2026-09-14T22:12:32.715Z"
+}

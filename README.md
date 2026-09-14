@@ -1,6 +1,6 @@
 # World Atlas
 
-Historical atlas built through a gated roadmap. **M001–M011 are PASS**; the next module is M012, Continuous Integration Foundation. See [the ledger](docs/progress/MODULE_LEDGER.md) and [ten-module completion evidence](docs/progress/M002-M011_COMPLETION.md).
+Historical atlas built through a gated roadmap. **M001–M011 are PASS**; M012 is implemented locally and BLOCKED pending GitHub pull-request verification. See [M012 evidence](docs/progress/M012_VERIFICATION.md). See [the ledger](docs/progress/MODULE_LEDGER.md) and [ten-module completion evidence](docs/progress/M002-M011_COMPLETION.md).
 
 ## Local setup
 
@@ -13,7 +13,7 @@ npm exec --yes --package=pnpm@10.34.5 -- pnpm verify
 
 With the pinned pnpm already available, use pnpm directly. Do not run npm install or generate a second lockfile. npm exec only bootstraps the pinned manager; the pnpm package store is local under ignored .cache.
 
-pnpm verify runs real lint, strict type, format, repository, planning-contract and intentional-failure checks. pnpm test:install tests two fresh committed clones and compares dependency graphs. See [toolchain details](TOOLCHAIN.md) and [dependency policy](DEPENDENCY_POLICY.md).
+pnpm verify runs lint, strict types, unit tests, the CI tooling build, formatting and all foundation regressions. pnpm ci:check also performs the frozen install in pipeline order. pnpm test:install tests two fresh committed clones and compares dependency graphs. See [toolchain details](TOOLCHAIN.md) and [dependency policy](DEPENDENCY_POLICY.md).
 
 The repository contains contracts and development infrastructure. The running atlas, API and database begin in later modules; no dev server or cloud deployment exists yet.
 

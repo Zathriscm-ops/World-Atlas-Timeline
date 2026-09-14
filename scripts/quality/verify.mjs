@@ -7,6 +7,8 @@ assert.ok(cli && path.basename(cli) === 'pnpm.cjs', 'Run pnpm verify with the pi
 for (const task of [
   'lint',
   'typecheck',
+  'test:unit',
+  'build',
   'format:check',
   'test:repository',
   'test:planning',
@@ -16,4 +18,6 @@ for (const task of [
   assert.ifError(result.error);
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
-process.stdout.write('PASS all implemented M001–M011 foundation checks\n');
+process.stdout.write(
+  'PASS all implemented local checks; hosted gates are recorded in the module ledger\n',
+);

@@ -4,7 +4,7 @@ The [End-to-End Gated Development Master Plan](GATED_DEVELOPMENT_MASTER_PLAN.md)
 
 ## Current state
 
-M001–M011 are PASS. [The module ledger](docs/progress/MODULE_LEDGER.md) records actual status; [the M002–M011 completion record](docs/progress/M002-M011_COMPLETION.md) links the latest artifacts and verification scope. Next eligible module: **M012 — Continuous Integration Foundation**. M012–M149 remain NOT_STARTED.
+M001–M011 are PASS. [The module ledger](docs/progress/MODULE_LEDGER.md) records actual status; [the M002–M011 completion record](docs/progress/M002-M011_COMPLETION.md) links the latest artifacts and verification scope. Active module: **M012 — BLOCKED on hosted pull-request verification**; local CI passes Windows and Linux checks. See [M012 evidence](docs/progress/M012_VERIFICATION.md). M013–M149 remain NOT_STARTED. The current requested batch is M012–M021.
 
 [README](README.md) provides installation and pnpm verify instructions. The repository has real development checks but no production web application, API, database or cloud environment yet.
 

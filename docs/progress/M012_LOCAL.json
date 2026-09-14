@@ -1,0 +1,117 @@
+{
+  "module": "M012",
+  "local_result": "PASS",
+  "remote_result": "NOT_VERIFIED",
+  "tested_commit": "229908baf7a287ce052eb2716e668db21898a54b",
+  "platform": "win32-x64",
+  "node": "v24.18.0",
+  "positive_pipeline": {
+    "status": "PASS",
+    "exitCode": 0,
+    "completed": [
+      {
+        "name": "install",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "unit-tests",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "build",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "format",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "planning",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "repository",
+        "exitCode": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "toolchain",
+        "exitCode": 0,
+        "status": "PASS"
+      }
+    ]
+  },
+  "negative_cases": [
+    {
+      "stage": "install",
+      "exit": 1,
+      "diagnostic": "ERR_PNPM_OUTDATED_LOCKFILE",
+      "completed": [
+        "install"
+      ],
+      "later_stages_ran": false
+    },
+    {
+      "stage": "lint",
+      "exit": 1,
+      "diagnostic": "no-debugger",
+      "completed": [
+        "install",
+        "lint"
+      ],
+      "later_stages_ran": false
+    },
+    {
+      "stage": "typecheck",
+      "exit": 2,
+      "diagnostic": "TS2322",
+      "completed": [
+        "install",
+        "lint",
+        "typecheck"
+      ],
+      "later_stages_ran": false
+    },
+    {
+      "stage": "unit-tests",
+      "exit": 1,
+      "diagnostic": "intentional CI failure",
+      "completed": [
+        "install",
+        "lint",
+        "typecheck",
+        "unit-tests"
+      ],
+      "later_stages_ran": false
+    },
+    {
+      "stage": "build",
+      "exit": 2,
+      "diagnostic": "TS6046",
+      "completed": [
+        "install",
+        "lint",
+        "typecheck",
+        "unit-tests",
+        "build"
+      ],
+      "later_stages_ran": false
+    }
+  ],
+  "checked_at_utc": "2026-09-14T22:11:44.431Z"
+}

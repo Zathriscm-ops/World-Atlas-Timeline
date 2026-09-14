@@ -10,7 +10,7 @@ assert.ok(cli && path.basename(cli) === 'pnpm.cjs', 'Run this test through the p
 const args = process.argv.slice(2);
 const moduleIndex = args.indexOf('--module');
 const moduleId = moduleIndex >= 0 ? args[moduleIndex + 1] : 'M010';
-assert.match(moduleId, /^M01[01]$/);
+assert.match(moduleId, /^M01[012]$/);
 function run(command, argv, cwd, expectSuccess = true) {
   const result = spawnSync(command, argv, {
     cwd,
@@ -45,7 +45,7 @@ for (const label of ['a', 'b']) {
   const lockBefore = hash(fs.readFileSync(path.join(dir, 'pnpm-lock.yaml')));
   const install = run(process.execPath, [cli, 'install', '--frozen-lockfile'], dir);
   run(process.execPath, [cli, 'test:repository'], dir);
-  if (moduleId === 'M011') run(process.execPath, [cli, 'verify'], dir);
+  if (['M011', 'M012'].includes(moduleId)) run(process.execPath, [cli, 'verify'], dir);
   const graph = normalize(
     JSON.parse(
       run(process.execPath, [cli, 'list', '--recursive', '--depth', 'Infinity', '--json'], dir)
