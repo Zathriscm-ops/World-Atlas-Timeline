@@ -1,0 +1,42 @@
+{
+  "module": "M012",
+  "repository": "Zathriscm-ops/World-Atlas-Timeline",
+  "pull_request": "https://github.com/Zathriscm-ops/World-Atlas-Timeline/pull/1",
+  "failed_run": {
+    "head_sha": "0539abc3bfd1726e9350dfc2712c6d0beefe391c",
+    "run_id": 34906664209,
+    "conclusion": "failure",
+    "jobs": {
+      "Foundation (windows-latest)": "failure",
+      "Foundation (ubuntu-latest)": "failure",
+      "Required": "failure"
+    },
+    "merge_attempt": {
+      "status": 405,
+      "merged": false,
+      "message": "Required status check \"Required\" is failing."
+    }
+  },
+  "recovery_run": {
+    "head_sha": "2fc23b1df01a7be170685acc8a76b0fe05e65f64",
+    "run_id": 34906776411,
+    "conclusion": "success",
+    "jobs": {
+      "Foundation (windows-latest)": "success",
+      "Foundation (ubuntu-latest)": "success",
+      "Required": "success"
+    }
+  },
+  "branch_protection": {
+    "branch": "main",
+    "required_contexts": ["Required"],
+    "strict": true,
+    "enforce_admins": true,
+    "require_conversation_resolution": true,
+    "allow_force_pushes": false,
+    "allow_deletions": false
+  },
+  "probe_pr_closed_unmerged": true,
+  "result": "PASS",
+  "checked_at_utc": "2026-09-14T23:03:00Z"
+}

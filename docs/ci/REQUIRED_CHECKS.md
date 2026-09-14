@@ -6,10 +6,8 @@ The pipeline runs frozen install → lint → typecheck → unit tests → build
 
 M012 builds the real TypeScript CI orchestrator to dist/ci and executes its emitted JavaScript. This is a tooling build, not an atlas application build. M016 adds the actual web production build to the same build command. Node 24's native type stripping lets CI run its small typed orchestrator before dependencies/build exist; tsc still performs the actual type check.
 
-## Required remote configuration
+## Verified remote configuration
 
-On the selected GitHub repository, configure main branch protection or a ruleset requiring the **Required** check from the Atlas CI workflow, strict/up-to-date checking and no administrative bypass. Do not claim merge enforcement merely because a YAML file exists. Verify a healthy PR run and deliberately failing stage runs; retain run URLs, head SHAs, conclusions and observed merge blocking.
+The `Zathriscm-ops/World-Atlas-Timeline` main branch requires the **Required** check, strict/up-to-date checking and administrative enforcement. Probe PR #1 produced an observed blocked merge while Required failed and a complete successful recovery run. Exact SHAs, run IDs and protection settings are retained in `docs/progress/M012_HOSTED.json`.
 
-The local project has no configured remote, and the connected account returned no accessible repositories on this task's initial check. The repository destination is pending user clarification. M012 cannot be marked PASS until the remote gate is actually verified; this document does not waive it.
-
-Primary reference: [GitHub required status checks](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches). Availability depends on the chosen repository and account plan; no paid plan has been selected.
+Primary reference: [GitHub required status checks](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).

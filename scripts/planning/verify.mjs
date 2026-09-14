@@ -388,6 +388,24 @@ if (through >= 11)
     assert.equal(audit.vulnerabilities.high + audit.vulnerabilities.critical, 0);
   });
 
+if (through >= 12)
+  check('M012-hosted-ci-enforcement', () => {
+    const hosted = json('docs/progress/M012_HOSTED.json');
+    assert.equal(hosted.repository, 'Zathriscm-ops/World-Atlas-Timeline');
+    assert.equal(hosted.result, 'PASS');
+    assert.equal(hosted.failed_run.conclusion, 'failure');
+    assert.equal(hosted.failed_run.jobs.Required, 'failure');
+    assert.equal(hosted.failed_run.merge_attempt.status, 405);
+    assert.equal(hosted.failed_run.merge_attempt.merged, false);
+    assert.equal(hosted.recovery_run.conclusion, 'success');
+    assert.equal(hosted.recovery_run.jobs['Foundation (windows-latest)'], 'success');
+    assert.equal(hosted.recovery_run.jobs['Foundation (ubuntu-latest)'], 'success');
+    assert.equal(hosted.recovery_run.jobs.Required, 'success');
+    assert.deepEqual(hosted.branch_protection.required_contexts, ['Required']);
+    assert.equal(hosted.branch_protection.strict, true);
+    assert.equal(hosted.branch_protection.enforce_admins, true);
+    assert.equal(hosted.probe_pr_closed_unmerged, true);
+  });
 /* MODULE CHECKS */
 const report = {
   through,
