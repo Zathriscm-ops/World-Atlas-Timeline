@@ -28,4 +28,4 @@ References: [TypeScript strict](https://www.typescriptlang.org/tsconfig/strict.h
 
 ## M012 extension
 
-The current pnpm verify command also runs Vitest unit tests and the compiled CI tooling build. pnpm ci:check runs the full frozen-install pipeline. The GitHub workflow is implemented and locally tested on Windows/Linux; hosted pull-request enforcement remains BLOCKED as recorded in docs/progress/M012_VERIFICATION.md. Earlier M011 statements describe that completed baseline.
+The current pnpm verify command also runs Vitest unit tests and the compiled CI tooling build. pnpm ci:check runs the full frozen-install pipeline. The GitHub workflow passed on Windows and Linux runners, and protected `main` requires its aggregate `Required` check. The failure probe, rejected merge, recovery run, and protection settings are recorded in docs/progress/M012_VERIFICATION.md. Earlier M011 statements describe that completed baseline.

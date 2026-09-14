@@ -1,6 +1,6 @@
 # M012 verification
 
-Module status: BLOCKED on hosted pull-request enforcement. Local implementation and verification are complete.
+Module status: PASS. Local and hosted pull-request enforcement are verified.
 
 ## Delivered
 
@@ -17,10 +17,10 @@ Module status: BLOCKED on hosted pull-request enforcement. Local implementation 
 
 The initial Vitest 5.0.0/Vite 8.3.0 pair failed upstream declaration checking. Compatible Vitest 4.1.11/Vite 7.3.6 passed without disabling strict or library checks. pnpm's reserved ci command was avoided by naming the script ci:check. Optional esbuild install scripts remain denied; the packaged platform binary successfully ran the test transform on both platforms.
 
-## Outstanding required gate
+## Hosted pull-request gate
 
-No Git remote is configured. The connected GitHub account returned no accessible repositories, including an owner-filtered lookup; no public repository was returned by the owner lookup. No hosted workflow run, pull request, required-check rule or merge-blocking evidence exists.
+[Probe PR #1](https://github.com/Zathriscm-ops/World-Atlas-Timeline/pull/1) exercised the protected `main` branch. Commit `0539abc3bfd1726e9350dfc2712c6d0beefe391c` deliberately failed both platform jobs and the final Required job in [run 34906664209](https://github.com/Zathriscm-ops/World-Atlas-Timeline/actions/runs/34906664209). GitHub rejected an actual merge attempt with HTTP 405 and `Required status check "Required" is failing.`
 
-The user has been asked for the destination repository URL or a new repository's owner/name and visibility. After access is available, publish this reviewable workflow to the intended repository, configure the required check, and verify healthy/failing pull requests. Record actual head SHAs, run URLs and blocking behavior before PASS.
+Recovery commit `2fc23b1df01a7be170685acc8a76b0fe05e65f64` passed Windows, Ubuntu and Required in [run 34906776411](https://github.com/Zathriscm-ops/World-Atlas-Timeline/actions/runs/34906776411). Branch protection requires the unique Required context, strict/up-to-date status, applies to administrators, requires resolved conversations, and prohibits force pushes/deletion. The probe PR was closed unmerged after evidence collection.
 
-No P0/P1 defect is known in the local implementation. The missing hosted evidence is a gate blocker, not an application defect or permission to skip M012. M013–M021 remain NOT_STARTED under AGENTS.md's prerequisite rule. Docker readiness was checked, but no database or map module was begun.
+No P0/P1 defect remains. The complete machine-readable record is M012_HOSTED.json. M013 is now eligible.

@@ -1,6 +1,6 @@
 # World Atlas
 
-Historical atlas built through a gated roadmap. **M001–M011 are PASS**; M012 is implemented locally and BLOCKED pending GitHub pull-request verification. See [M012 evidence](docs/progress/M012_VERIFICATION.md). See [the ledger](docs/progress/MODULE_LEDGER.md) and [ten-module completion evidence](docs/progress/M002-M011_COMPLETION.md).
+Historical atlas built through a gated roadmap. **M001–M012 are PASS**. See [M012 evidence](docs/progress/M012_VERIFICATION.md), [the ledger](docs/progress/MODULE_LEDGER.md), and [the M002–M011 completion record](docs/progress/M002-M011_COMPLETION.md).
 
 ## Local setup
 
