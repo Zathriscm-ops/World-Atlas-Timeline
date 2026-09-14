@@ -11,7 +11,10 @@
       "version": "page modified 2026-08-05; accessed 2026-09-14",
       "reliability": "CURATED_REFERENCE",
       "accessed": "2026-09-14",
-      "directly_consulted": true
+      "directly_consulted": true,
+      "reliability_rationale": "Named scholarly contributors and an editable gazetteer record; individual fields still require source interpretation.",
+      "language": null,
+      "publication_date": null
     },
     {
       "id": "nhm-hallstatt",
@@ -23,7 +26,10 @@
       "version": "accessed 2026-09-14",
       "reliability": "INSTITUTIONAL_INTERPRETATION",
       "accessed": "2026-09-14",
-      "directly_consulted": true
+      "directly_consulted": true,
+      "reliability_rationale": "Institutional archaeological interpretation; the consulted passage supplies classification context, not dated polygon geometry.",
+      "language": null,
+      "publication_date": null
     },
     {
       "id": "gretzinger-2024",
@@ -39,7 +45,10 @@
       "version": "published 2024-06-03",
       "reliability": "PEER_REVIEWED_RESEARCH",
       "accessed": "2026-09-14",
-      "directly_consulted": true
+      "directly_consulted": true,
+      "reliability_rationale": "Peer-reviewed article with explicit methods and publication metadata; cited terminology does not establish a fixed ethnic boundary.",
+      "language": null,
+      "publication_date": "2024-06-03"
     },
     {
       "id": "barrington-2000",
@@ -54,7 +63,10 @@
       "reliability": "SCHOLARLY_REFERENCE",
       "accessed": "2026-09-14",
       "directly_consulted": false,
-      "consultation_note": "Publisher bibliography and Pleiades reference only; atlas map not examined."
+      "consultation_note": "Publisher bibliography and Pleiades reference only; atlas map not examined.",
+      "reliability_rationale": "Scholarly atlas bibliography; the underlying map was not directly consulted, so no direct geometry verification is claimed.",
+      "language": null,
+      "publication_date": "2000"
     },
     {
       "id": "unesco-silk",
@@ -66,7 +78,10 @@
       "version": "accessed 2026-09-14",
       "reliability": "INSTITUTIONAL_INTERPRETATION",
       "accessed": "2026-09-14",
-      "directly_consulted": true
+      "directly_consulted": true,
+      "reliability_rationale": "Institutional introductory account of exchange networks; it is not a dated route geometry dataset.",
+      "language": null,
+      "publication_date": null
     },
     {
       "id": "historical-basemaps",
@@ -78,7 +93,10 @@
       "version": "ce213385c641acd9196b7d81177328f94496df00",
       "reliability": "UNVERIFIED_AGGREGATE",
       "accessed": "2026-09-14",
-      "directly_consulted": true
+      "directly_consulted": true,
+      "reliability_rationale": "Community aggregate with mixed upstream sources and an explicit verification warning; no polygon is historically certified here.",
+      "language": null,
+      "publication_date": null
     }
   ],
   "citations": [
@@ -190,7 +208,12 @@
       "manifest": "data/research/snapshot-manifest.json",
       "status": "RESEARCH_ONLY",
       "normalization": "none",
-      "rights_record_id": "rights-basemaps"
+      "rights_record_id": "rights-basemaps",
+      "acquired_at": "2026-09-14",
+      "contributor_id": "automation",
+      "crs_review": "PENDING",
+      "axis_order_review": "PENDING",
+      "temporal_convention_review": "PENDING"
     }
   ],
   "contributors": [
@@ -208,7 +231,10 @@
       "reason": "Source-linked planning examples; no public release.",
       "timestamp": "2026-09-14",
       "ai_assisted": true,
-      "review_status": "SOURCE_CHECKED_NOT_HISTORIAN_REVIEWED"
+      "review_status": "SOURCE_CHECKED_NOT_HISTORIAN_REVIEWED",
+      "tool": "Codex",
+      "model_id": null,
+      "output_claims_sha256": "450b34d4f1bc12720556e67f11c85e814623f3e9598c47130dd36067e428ca12"
     }
   ],
   "citation_formats": ["book", "journal", "dataset", "historical_atlas", "museum", "web"],
@@ -217,6 +243,7 @@
     "dangling-source",
     "ai-as-authority",
     "indirect-as-direct",
-    "missing-locator"
+    "missing-locator",
+    "missing-reliability-rationale"
   ]
 }

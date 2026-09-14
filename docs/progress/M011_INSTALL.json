@@ -1,0 +1,2331 @@
+{
+  "module": "M011",
+  "result": "PASS",
+  "tested_commit": "98359bef0297c5f03a655c8e40f887ce2decb168",
+  "node": "v24.18.0",
+  "pnpm": "10.34.5",
+  "platform": "win32-x64",
+  "method": "Two fresh local Git clones and independent stores on the current host",
+  "installs": [
+    {
+      "label": "a",
+      "lock_sha256": "64f9bcd83d600260677533a9ac7b57823d8b5fae837b269c48e79421089d0fcc",
+      "graph_sha256": "39177f37080e5e55047e844d4be09eb3b5516c3b8169788fe96de4dad8325b43",
+      "graph": [
+        {
+          "devDependencies": {
+            "@eslint/js": {
+              "dependencies": {
+                "eslint": {
+                  "dependencies": {
+                    "@eslint-community/eslint-utils": {
+                      "dependencies": {
+                        "eslint": {
+                          "from": "eslint",
+                          "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                          "version": "10.10.0"
+                        },
+                        "eslint-visitor-keys": {
+                          "from": "eslint-visitor-keys",
+                          "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz",
+                          "version": "3.4.3"
+                        }
+                      },
+                      "from": "@eslint-community/eslint-utils",
+                      "resolved": "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.10.1.tgz",
+                      "version": "4.10.1"
+                    },
+                    "@eslint-community/regexpp": {
+                      "from": "@eslint-community/regexpp",
+                      "resolved": "https://registry.npmjs.org/@eslint-community/regexpp/-/regexpp-4.12.2.tgz",
+                      "version": "4.12.2"
+                    },
+                    "@eslint/config-array": {
+                      "dependencies": {
+                        "@eslint/object-schema": {
+                          "from": "@eslint/object-schema",
+                          "resolved": "https://registry.npmjs.org/@eslint/object-schema/-/object-schema-3.0.5.tgz",
+                          "version": "3.0.5"
+                        },
+                        "debug": {
+                          "dependencies": {
+                            "ms": {
+                              "from": "ms",
+                              "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+                              "version": "2.1.3"
+                            }
+                          },
+                          "from": "debug",
+                          "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                          "version": "4.4.3"
+                        },
+                        "minimatch": {
+                          "dependencies": {
+                            "brace-expansion": {
+                              "dependencies": {
+                                "balanced-match": {
+                                  "from": "balanced-match",
+                                  "resolved": "https://registry.npmjs.org/balanced-match/-/balanced-match-4.0.4.tgz",
+                                  "version": "4.0.4"
+                                }
+                              },
+                              "from": "brace-expansion",
+                              "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-5.0.9.tgz",
+                              "version": "5.0.9"
+                            }
+                          },
+                          "from": "minimatch",
+                          "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-10.2.6.tgz",
+                          "version": "10.2.6"
+                        }
+                      },
+                      "from": "@eslint/config-array",
+                      "resolved": "https://registry.npmjs.org/@eslint/config-array/-/config-array-0.23.5.tgz",
+                      "version": "0.23.5"
+                    },
+                    "@eslint/config-helpers": {
+                      "dependencies": {
+                        "@eslint/core": {
+                          "dependencies": {
+                            "@types/json-schema": {
+                              "from": "@types/json-schema",
+                              "resolved": "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz",
+                              "version": "7.0.15"
+                            }
+                          },
+                          "from": "@eslint/core",
+                          "resolved": "https://registry.npmjs.org/@eslint/core/-/core-1.2.1.tgz",
+                          "version": "1.2.1"
+                        }
+                      },
+                      "from": "@eslint/config-helpers",
+                      "resolved": "https://registry.npmjs.org/@eslint/config-helpers/-/config-helpers-0.7.0.tgz",
+                      "version": "0.7.0"
+                    },
+                    "@eslint/core": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 1,
+                      "from": "@eslint/core",
+                      "resolved": "https://registry.npmjs.org/@eslint/core/-/core-1.2.1.tgz",
+                      "version": "1.2.1"
+                    },
+                    "@eslint/plugin-kit": {
+                      "dependencies": {
+                        "@eslint/core": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 1,
+                          "from": "@eslint/core",
+                          "resolved": "https://registry.npmjs.org/@eslint/core/-/core-1.2.1.tgz",
+                          "version": "1.2.1"
+                        },
+                        "levn": {
+                          "dependencies": {
+                            "prelude-ls": {
+                              "from": "prelude-ls",
+                              "resolved": "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz",
+                              "version": "1.2.1"
+                            },
+                            "type-check": {
+                              "dependencies": {
+                                "prelude-ls": {
+                                  "from": "prelude-ls",
+                                  "resolved": "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz",
+                                  "version": "1.2.1"
+                                }
+                              },
+                              "from": "type-check",
+                              "resolved": "https://registry.npmjs.org/type-check/-/type-check-0.4.0.tgz",
+                              "version": "0.4.0"
+                            }
+                          },
+                          "from": "levn",
+                          "resolved": "https://registry.npmjs.org/levn/-/levn-0.4.1.tgz",
+                          "version": "0.4.1"
+                        }
+                      },
+                      "from": "@eslint/plugin-kit",
+                      "resolved": "https://registry.npmjs.org/@eslint/plugin-kit/-/plugin-kit-0.7.3.tgz",
+                      "version": "0.7.3"
+                    },
+                    "@humanfs/node": {
+                      "dependencies": {
+                        "@humanfs/core": {
+                          "dependencies": {
+                            "@humanfs/types": {
+                              "from": "@humanfs/types",
+                              "resolved": "https://registry.npmjs.org/@humanfs/types/-/types-0.15.0.tgz",
+                              "version": "0.15.0"
+                            }
+                          },
+                          "from": "@humanfs/core",
+                          "resolved": "https://registry.npmjs.org/@humanfs/core/-/core-0.19.2.tgz",
+                          "version": "0.19.2"
+                        },
+                        "@humanfs/types": {
+                          "from": "@humanfs/types",
+                          "resolved": "https://registry.npmjs.org/@humanfs/types/-/types-0.15.0.tgz",
+                          "version": "0.15.0"
+                        },
+                        "@humanwhocodes/retry": {
+                          "from": "@humanwhocodes/retry",
+                          "resolved": "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.4.3.tgz",
+                          "version": "0.4.3"
+                        }
+                      },
+                      "from": "@humanfs/node",
+                      "resolved": "https://registry.npmjs.org/@humanfs/node/-/node-0.16.8.tgz",
+                      "version": "0.16.8"
+                    },
+                    "@humanwhocodes/module-importer": {
+                      "from": "@humanwhocodes/module-importer",
+                      "resolved": "https://registry.npmjs.org/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz",
+                      "version": "1.0.1"
+                    },
+                    "@humanwhocodes/retry": {
+                      "from": "@humanwhocodes/retry",
+                      "resolved": "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.4.3.tgz",
+                      "version": "0.4.3"
+                    },
+                    "@types/estree": {
+                      "from": "@types/estree",
+                      "resolved": "https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz",
+                      "version": "1.0.9"
+                    },
+                    "ajv": {
+                      "dependencies": {
+                        "fast-deep-equal": {
+                          "from": "fast-deep-equal",
+                          "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+                          "version": "3.1.3"
+                        },
+                        "fast-json-stable-stringify": {
+                          "from": "fast-json-stable-stringify",
+                          "resolved": "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz",
+                          "version": "2.1.0"
+                        },
+                        "json-schema-traverse": {
+                          "from": "json-schema-traverse",
+                          "resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
+                          "version": "0.4.1"
+                        },
+                        "uri-js": {
+                          "dependencies": {
+                            "punycode": {
+                              "from": "punycode",
+                              "resolved": "https://registry.npmjs.org/punycode/-/punycode-2.3.1.tgz",
+                              "version": "2.3.1"
+                            }
+                          },
+                          "from": "uri-js",
+                          "resolved": "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz",
+                          "version": "4.4.1"
+                        }
+                      },
+                      "from": "ajv",
+                      "resolved": "https://registry.npmjs.org/ajv/-/ajv-6.15.0.tgz",
+                      "version": "6.15.0"
+                    },
+                    "cross-spawn": {
+                      "dependencies": {
+                        "path-key": {
+                          "from": "path-key",
+                          "resolved": "https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz",
+                          "version": "3.1.1"
+                        },
+                        "shebang-command": {
+                          "dependencies": {
+                            "shebang-regex": {
+                              "from": "shebang-regex",
+                              "resolved": "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz",
+                              "version": "3.0.0"
+                            }
+                          },
+                          "from": "shebang-command",
+                          "resolved": "https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz",
+                          "version": "2.0.0"
+                        },
+                        "which": {
+                          "dependencies": {
+                            "isexe": {
+                              "from": "isexe",
+                              "resolved": "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz",
+                              "version": "2.0.0"
+                            }
+                          },
+                          "from": "which",
+                          "resolved": "https://registry.npmjs.org/which/-/which-2.0.2.tgz",
+                          "version": "2.0.2"
+                        }
+                      },
+                      "from": "cross-spawn",
+                      "resolved": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz",
+                      "version": "7.0.6"
+                    },
+                    "debug": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 1,
+                      "from": "debug",
+                      "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                      "version": "4.4.3"
+                    },
+                    "escape-string-regexp": {
+                      "from": "escape-string-regexp",
+                      "resolved": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz",
+                      "version": "4.0.0"
+                    },
+                    "eslint-scope": {
+                      "dependencies": {
+                        "@types/esrecurse": {
+                          "from": "@types/esrecurse",
+                          "resolved": "https://registry.npmjs.org/@types/esrecurse/-/esrecurse-4.3.1.tgz",
+                          "version": "4.3.1"
+                        },
+                        "@types/estree": {
+                          "from": "@types/estree",
+                          "resolved": "https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz",
+                          "version": "1.0.9"
+                        },
+                        "esrecurse": {
+                          "dependencies": {
+                            "estraverse": {
+                              "from": "estraverse",
+                              "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz",
+                              "version": "5.3.0"
+                            }
+                          },
+                          "from": "esrecurse",
+                          "resolved": "https://registry.npmjs.org/esrecurse/-/esrecurse-4.3.0.tgz",
+                          "version": "4.3.0"
+                        },
+                        "estraverse": {
+                          "from": "estraverse",
+                          "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz",
+                          "version": "5.3.0"
+                        }
+                      },
+                      "from": "eslint-scope",
+                      "resolved": "https://registry.npmjs.org/eslint-scope/-/eslint-scope-9.1.2.tgz",
+                      "version": "9.1.2"
+                    },
+                    "eslint-visitor-keys": {
+                      "from": "eslint-visitor-keys",
+                      "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-5.0.1.tgz",
+                      "version": "5.0.1"
+                    },
+                    "espree": {
+                      "dependencies": {
+                        "acorn": {
+                          "from": "acorn",
+                          "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.18.0.tgz",
+                          "version": "8.18.0"
+                        },
+                        "acorn-jsx": {
+                          "dependencies": {
+                            "acorn": {
+                              "from": "acorn",
+                              "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.18.0.tgz",
+                              "version": "8.18.0"
+                            }
+                          },
+                          "from": "acorn-jsx",
+                          "resolved": "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz",
+                          "version": "5.3.2"
+                        },
+                        "eslint-visitor-keys": {
+                          "from": "eslint-visitor-keys",
+                          "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-5.0.1.tgz",
+                          "version": "5.0.1"
+                        }
+                      },
+                      "from": "espree",
+                      "resolved": "https://registry.npmjs.org/espree/-/espree-11.2.0.tgz",
+                      "version": "11.2.0"
+                    },
+                    "esquery": {
+                      "dependencies": {
+                        "estraverse": {
+                          "from": "estraverse",
+                          "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz",
+                          "version": "5.3.0"
+                        }
+                      },
+                      "from": "esquery",
+                      "resolved": "https://registry.npmjs.org/esquery/-/esquery-1.7.0.tgz",
+                      "version": "1.7.0"
+                    },
+                    "esutils": {
+                      "from": "esutils",
+                      "resolved": "https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz",
+                      "version": "2.0.3"
+                    },
+                    "fast-deep-equal": {
+                      "from": "fast-deep-equal",
+                      "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+                      "version": "3.1.3"
+                    },
+                    "file-entry-cache": {
+                      "dependencies": {
+                        "flat-cache": {
+                          "dependencies": {
+                            "cacheable": {
+                              "dependencies": {
+                                "@cacheable/memory": {
+                                  "dependencies": {
+                                    "@cacheable/utils": {
+                                      "dependencies": {
+                                        "hashery": {
+                                          "dependencies": {
+                                            "hookified": {
+                                              "from": "hookified",
+                                              "resolved": "https://registry.npmjs.org/hookified/-/hookified-1.15.1.tgz",
+                                              "version": "1.15.1"
+                                            }
+                                          },
+                                          "from": "hashery",
+                                          "resolved": "https://registry.npmjs.org/hashery/-/hashery-1.5.1.tgz",
+                                          "version": "1.5.1"
+                                        },
+                                        "keyv": {
+                                          "dependencies": {
+                                            "@keyv/serialize": {
+                                              "from": "@keyv/serialize",
+                                              "resolved": "https://registry.npmjs.org/@keyv/serialize/-/serialize-1.1.1.tgz",
+                                              "version": "1.1.1"
+                                            }
+                                          },
+                                          "from": "keyv",
+                                          "resolved": "https://registry.npmjs.org/keyv/-/keyv-5.6.0.tgz",
+                                          "version": "5.6.0"
+                                        }
+                                      },
+                                      "from": "@cacheable/utils",
+                                      "resolved": "https://registry.npmjs.org/@cacheable/utils/-/utils-2.5.0.tgz",
+                                      "version": "2.5.0"
+                                    },
+                                    "@keyv/bigmap": {
+                                      "dependencies": {
+                                        "hashery": {
+                                          "deduped": true,
+                                          "dedupedDependenciesCount": 1,
+                                          "from": "hashery",
+                                          "resolved": "https://registry.npmjs.org/hashery/-/hashery-1.5.1.tgz",
+                                          "version": "1.5.1"
+                                        },
+                                        "hookified": {
+                                          "from": "hookified",
+                                          "resolved": "https://registry.npmjs.org/hookified/-/hookified-1.15.1.tgz",
+                                          "version": "1.15.1"
+                                        },
+                                        "keyv": {
+                                          "deduped": true,
+                                          "dedupedDependenciesCount": 1,
+                                          "from": "keyv",
+                                          "resolved": "https://registry.npmjs.org/keyv/-/keyv-5.6.0.tgz",
+                                          "version": "5.6.0"
+                                        }
+                                      },
+                                      "from": "@keyv/bigmap",
+                                      "resolved": "https://registry.npmjs.org/@keyv/bigmap/-/bigmap-1.3.1.tgz",
+                                      "version": "1.3.1"
+                                    },
+                                    "hookified": {
+                                      "from": "hookified",
+                                      "resolved": "https://registry.npmjs.org/hookified/-/hookified-1.15.1.tgz",
+                                      "version": "1.15.1"
+                                    },
+                                    "keyv": {
+                                      "deduped": true,
+                                      "dedupedDependenciesCount": 1,
+                                      "from": "keyv",
+                                      "resolved": "https://registry.npmjs.org/keyv/-/keyv-5.6.0.tgz",
+                                      "version": "5.6.0"
+                                    }
+                                  },
+                                  "from": "@cacheable/memory",
+                                  "resolved": "https://registry.npmjs.org/@cacheable/memory/-/memory-2.2.0.tgz",
+                                  "version": "2.2.0"
+                                },
+                                "@cacheable/utils": {
+                                  "deduped": true,
+                                  "dedupedDependenciesCount": 4,
+                                  "from": "@cacheable/utils",
+                                  "resolved": "https://registry.npmjs.org/@cacheable/utils/-/utils-2.5.0.tgz",
+                                  "version": "2.5.0"
+                                },
+                                "hookified": {
+                                  "from": "hookified",
+                                  "resolved": "https://registry.npmjs.org/hookified/-/hookified-1.15.1.tgz",
+                                  "version": "1.15.1"
+                                },
+                                "keyv": {
+                                  "deduped": true,
+                                  "dedupedDependenciesCount": 1,
+                                  "from": "keyv",
+                                  "resolved": "https://registry.npmjs.org/keyv/-/keyv-5.6.0.tgz",
+                                  "version": "5.6.0"
+                                },
+                                "qified": {
+                                  "dependencies": {
+                                    "hookified": {
+                                      "from": "hookified",
+                                      "resolved": "https://registry.npmjs.org/hookified/-/hookified-2.2.0.tgz",
+                                      "version": "2.2.0"
+                                    }
+                                  },
+                                  "from": "qified",
+                                  "resolved": "https://registry.npmjs.org/qified/-/qified-0.10.1.tgz",
+                                  "version": "0.10.1"
+                                }
+                              },
+                              "from": "cacheable",
+                              "resolved": "https://registry.npmjs.org/cacheable/-/cacheable-2.5.0.tgz",
+                              "version": "2.5.0"
+                            },
+                            "flatted": {
+                              "from": "flatted",
+                              "resolved": "https://registry.npmjs.org/flatted/-/flatted-3.4.4.tgz",
+                              "version": "3.4.4"
+                            },
+                            "hookified": {
+                              "from": "hookified",
+                              "resolved": "https://registry.npmjs.org/hookified/-/hookified-1.15.1.tgz",
+                              "version": "1.15.1"
+                            }
+                          },
+                          "from": "flat-cache",
+                          "resolved": "https://registry.npmjs.org/flat-cache/-/flat-cache-6.1.23.tgz",
+                          "version": "6.1.23"
+                        }
+                      },
+                      "from": "file-entry-cache",
+                      "resolved": "https://registry.npmjs.org/file-entry-cache/-/file-entry-cache-11.1.5.tgz",
+                      "version": "11.1.5"
+                    },
+                    "find-up": {
+                      "dependencies": {
+                        "locate-path": {
+                          "dependencies": {
+                            "p-locate": {
+                              "dependencies": {
+                                "p-limit": {
+                                  "dependencies": {
+                                    "yocto-queue": {
+                                      "from": "yocto-queue",
+                                      "resolved": "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz",
+                                      "version": "0.1.0"
+                                    }
+                                  },
+                                  "from": "p-limit",
+                                  "resolved": "https://registry.npmjs.org/p-limit/-/p-limit-3.1.0.tgz",
+                                  "version": "3.1.0"
+                                }
+                              },
+                              "from": "p-locate",
+                              "resolved": "https://registry.npmjs.org/p-locate/-/p-locate-5.0.0.tgz",
+                              "version": "5.0.0"
+                            }
+                          },
+                          "from": "locate-path",
+                          "resolved": "https://registry.npmjs.org/locate-path/-/locate-path-6.0.0.tgz",
+                          "version": "6.0.0"
+                        },
+                        "path-exists": {
+                          "from": "path-exists",
+                          "resolved": "https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz",
+                          "version": "4.0.0"
+                        }
+                      },
+                      "from": "find-up",
+                      "resolved": "https://registry.npmjs.org/find-up/-/find-up-5.0.0.tgz",
+                      "version": "5.0.0"
+                    },
+                    "glob-parent": {
+                      "dependencies": {
+                        "is-glob": {
+                          "dependencies": {
+                            "is-extglob": {
+                              "from": "is-extglob",
+                              "resolved": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz",
+                              "version": "2.1.1"
+                            }
+                          },
+                          "from": "is-glob",
+                          "resolved": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz",
+                          "version": "4.0.3"
+                        }
+                      },
+                      "from": "glob-parent",
+                      "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-6.0.2.tgz",
+                      "version": "6.0.2"
+                    },
+                    "ignore": {
+                      "from": "ignore",
+                      "resolved": "https://registry.npmjs.org/ignore/-/ignore-5.3.2.tgz",
+                      "version": "5.3.2"
+                    },
+                    "imurmurhash": {
+                      "from": "imurmurhash",
+                      "resolved": "https://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz",
+                      "version": "0.1.4"
+                    },
+                    "is-glob": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 1,
+                      "from": "is-glob",
+                      "resolved": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz",
+                      "version": "4.0.3"
+                    },
+                    "json-stable-stringify-without-jsonify": {
+                      "from": "json-stable-stringify-without-jsonify",
+                      "resolved": "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz",
+                      "version": "1.0.1"
+                    },
+                    "minimatch": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 2,
+                      "from": "minimatch",
+                      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-10.2.6.tgz",
+                      "version": "10.2.6"
+                    },
+                    "natural-compare": {
+                      "from": "natural-compare",
+                      "resolved": "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz",
+                      "version": "1.4.0"
+                    },
+                    "optionator": {
+                      "dependencies": {
+                        "deep-is": {
+                          "from": "deep-is",
+                          "resolved": "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz",
+                          "version": "0.1.4"
+                        },
+                        "fast-levenshtein": {
+                          "from": "fast-levenshtein",
+                          "resolved": "https://registry.npmjs.org/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz",
+                          "version": "2.0.6"
+                        },
+                        "levn": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 3,
+                          "from": "levn",
+                          "resolved": "https://registry.npmjs.org/levn/-/levn-0.4.1.tgz",
+                          "version": "0.4.1"
+                        },
+                        "prelude-ls": {
+                          "from": "prelude-ls",
+                          "resolved": "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz",
+                          "version": "1.2.1"
+                        },
+                        "type-check": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 1,
+                          "from": "type-check",
+                          "resolved": "https://registry.npmjs.org/type-check/-/type-check-0.4.0.tgz",
+                          "version": "0.4.0"
+                        },
+                        "word-wrap": {
+                          "from": "word-wrap",
+                          "resolved": "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.5.tgz",
+                          "version": "1.2.5"
+                        }
+                      },
+                      "from": "optionator",
+                      "resolved": "https://registry.npmjs.org/optionator/-/optionator-0.9.4.tgz",
+                      "version": "0.9.4"
+                    }
+                  },
+                  "from": "eslint",
+                  "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                  "version": "10.10.0"
+                }
+              },
+              "from": "@eslint/js",
+              "resolved": "https://registry.npmjs.org/@eslint/js/-/js-10.0.1.tgz",
+              "version": "10.0.1"
+            },
+            "eslint": {
+              "deduped": true,
+              "dedupedDependenciesCount": 103,
+              "from": "eslint",
+              "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+              "version": "10.10.0"
+            },
+            "globals": {
+              "from": "globals",
+              "resolved": "https://registry.npmjs.org/globals/-/globals-17.12.0.tgz",
+              "version": "17.12.0"
+            },
+            "prettier": {
+              "from": "prettier",
+              "resolved": "https://registry.npmjs.org/prettier/-/prettier-3.9.6.tgz",
+              "version": "3.9.6"
+            },
+            "typescript": {
+              "from": "typescript",
+              "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+              "version": "6.0.3"
+            },
+            "typescript-eslint": {
+              "dependencies": {
+                "@typescript-eslint/eslint-plugin": {
+                  "dependencies": {
+                    "@eslint-community/regexpp": {
+                      "from": "@eslint-community/regexpp",
+                      "resolved": "https://registry.npmjs.org/@eslint-community/regexpp/-/regexpp-4.12.2.tgz",
+                      "version": "4.12.2"
+                    },
+                    "@typescript-eslint/parser": {
+                      "dependencies": {
+                        "@typescript-eslint/scope-manager": {
+                          "dependencies": {
+                            "@typescript-eslint/types": {
+                              "from": "@typescript-eslint/types",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/visitor-keys": {
+                              "dependencies": {
+                                "@typescript-eslint/types": {
+                                  "from": "@typescript-eslint/types",
+                                  "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                                  "version": "8.70.0"
+                                },
+                                "eslint-visitor-keys": {
+                                  "from": "eslint-visitor-keys",
+                                  "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-5.0.1.tgz",
+                                  "version": "5.0.1"
+                                }
+                              },
+                              "from": "@typescript-eslint/visitor-keys",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.70.0.tgz",
+                              "version": "8.70.0"
+                            }
+                          },
+                          "from": "@typescript-eslint/scope-manager",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "@typescript-eslint/types": {
+                          "from": "@typescript-eslint/types",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "@typescript-eslint/typescript-estree": {
+                          "dependencies": {
+                            "@typescript-eslint/project-service": {
+                              "dependencies": {
+                                "@typescript-eslint/tsconfig-utils": {
+                                  "dependencies": {
+                                    "typescript": {
+                                      "from": "typescript",
+                                      "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                                      "version": "6.0.3"
+                                    }
+                                  },
+                                  "from": "@typescript-eslint/tsconfig-utils",
+                                  "resolved": "https://registry.npmjs.org/@typescript-eslint/tsconfig-utils/-/tsconfig-utils-8.70.0.tgz",
+                                  "version": "8.70.0"
+                                },
+                                "@typescript-eslint/types": {
+                                  "from": "@typescript-eslint/types",
+                                  "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                                  "version": "8.70.0"
+                                },
+                                "debug": {
+                                  "deduped": true,
+                                  "dedupedDependenciesCount": 1,
+                                  "from": "debug",
+                                  "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                                  "version": "4.4.3"
+                                },
+                                "typescript": {
+                                  "from": "typescript",
+                                  "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                                  "version": "6.0.3"
+                                }
+                              },
+                              "from": "@typescript-eslint/project-service",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/project-service/-/project-service-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/tsconfig-utils": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 1,
+                              "from": "@typescript-eslint/tsconfig-utils",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/tsconfig-utils/-/tsconfig-utils-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/types": {
+                              "from": "@typescript-eslint/types",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/visitor-keys": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 2,
+                              "from": "@typescript-eslint/visitor-keys",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "debug": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 1,
+                              "from": "debug",
+                              "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                              "version": "4.4.3"
+                            },
+                            "minimatch": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 2,
+                              "from": "minimatch",
+                              "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-10.2.6.tgz",
+                              "version": "10.2.6"
+                            },
+                            "semver": {
+                              "from": "semver",
+                              "resolved": "https://registry.npmjs.org/semver/-/semver-7.8.5.tgz",
+                              "version": "7.8.5"
+                            },
+                            "tinyglobby": {
+                              "dependencies": {
+                                "fdir": {
+                                  "dependencies": {
+                                    "picomatch": {
+                                      "from": "picomatch",
+                                      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+                                      "version": "4.0.7"
+                                    }
+                                  },
+                                  "from": "fdir",
+                                  "resolved": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
+                                  "version": "6.5.0"
+                                },
+                                "picomatch": {
+                                  "from": "picomatch",
+                                  "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+                                  "version": "4.0.7"
+                                }
+                              },
+                              "from": "tinyglobby",
+                              "resolved": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz",
+                              "version": "0.2.17"
+                            },
+                            "ts-api-utils": {
+                              "dependencies": {
+                                "typescript": {
+                                  "from": "typescript",
+                                  "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                                  "version": "6.0.3"
+                                }
+                              },
+                              "from": "ts-api-utils",
+                              "resolved": "https://registry.npmjs.org/ts-api-utils/-/ts-api-utils-2.5.0.tgz",
+                              "version": "2.5.0"
+                            },
+                            "typescript": {
+                              "from": "typescript",
+                              "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                              "version": "6.0.3"
+                            }
+                          },
+                          "from": "@typescript-eslint/typescript-estree",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "@typescript-eslint/visitor-keys": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 2,
+                          "from": "@typescript-eslint/visitor-keys",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "debug": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 1,
+                          "from": "debug",
+                          "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                          "version": "4.4.3"
+                        },
+                        "eslint": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 103,
+                          "from": "eslint",
+                          "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                          "version": "10.10.0"
+                        },
+                        "typescript": {
+                          "from": "typescript",
+                          "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                          "version": "6.0.3"
+                        }
+                      },
+                      "from": "@typescript-eslint/parser",
+                      "resolved": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.70.0.tgz",
+                      "version": "8.70.0"
+                    },
+                    "@typescript-eslint/scope-manager": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 4,
+                      "from": "@typescript-eslint/scope-manager",
+                      "resolved": "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.70.0.tgz",
+                      "version": "8.70.0"
+                    },
+                    "@typescript-eslint/type-utils": {
+                      "dependencies": {
+                        "@typescript-eslint/types": {
+                          "from": "@typescript-eslint/types",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "@typescript-eslint/typescript-estree": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 19,
+                          "from": "@typescript-eslint/typescript-estree",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "@typescript-eslint/utils": {
+                          "dependencies": {
+                            "@eslint-community/eslint-utils": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 2,
+                              "from": "@eslint-community/eslint-utils",
+                              "resolved": "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.10.1.tgz",
+                              "version": "4.10.1"
+                            },
+                            "@typescript-eslint/scope-manager": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 4,
+                              "from": "@typescript-eslint/scope-manager",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/types": {
+                              "from": "@typescript-eslint/types",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/typescript-estree": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 19,
+                              "from": "@typescript-eslint/typescript-estree",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "eslint": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 103,
+                              "from": "eslint",
+                              "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                              "version": "10.10.0"
+                            },
+                            "typescript": {
+                              "from": "typescript",
+                              "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                              "version": "6.0.3"
+                            }
+                          },
+                          "from": "@typescript-eslint/utils",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "debug": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 1,
+                          "from": "debug",
+                          "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                          "version": "4.4.3"
+                        },
+                        "eslint": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 103,
+                          "from": "eslint",
+                          "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                          "version": "10.10.0"
+                        },
+                        "ts-api-utils": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 1,
+                          "from": "ts-api-utils",
+                          "resolved": "https://registry.npmjs.org/ts-api-utils/-/ts-api-utils-2.5.0.tgz",
+                          "version": "2.5.0"
+                        },
+                        "typescript": {
+                          "from": "typescript",
+                          "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                          "version": "6.0.3"
+                        }
+                      },
+                      "from": "@typescript-eslint/type-utils",
+                      "resolved": "https://registry.npmjs.org/@typescript-eslint/type-utils/-/type-utils-8.70.0.tgz",
+                      "version": "8.70.0"
+                    },
+                    "@typescript-eslint/utils": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 6,
+                      "from": "@typescript-eslint/utils",
+                      "resolved": "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.70.0.tgz",
+                      "version": "8.70.0"
+                    },
+                    "@typescript-eslint/visitor-keys": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 2,
+                      "from": "@typescript-eslint/visitor-keys",
+                      "resolved": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.70.0.tgz",
+                      "version": "8.70.0"
+                    },
+                    "eslint": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 103,
+                      "from": "eslint",
+                      "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                      "version": "10.10.0"
+                    },
+                    "ignore": {
+                      "from": "ignore",
+                      "resolved": "https://registry.npmjs.org/ignore/-/ignore-7.0.9.tgz",
+                      "version": "7.0.9"
+                    },
+                    "natural-compare": {
+                      "from": "natural-compare",
+                      "resolved": "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz",
+                      "version": "1.4.0"
+                    },
+                    "ts-api-utils": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 1,
+                      "from": "ts-api-utils",
+                      "resolved": "https://registry.npmjs.org/ts-api-utils/-/ts-api-utils-2.5.0.tgz",
+                      "version": "2.5.0"
+                    },
+                    "typescript": {
+                      "from": "typescript",
+                      "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                      "version": "6.0.3"
+                    }
+                  },
+                  "from": "@typescript-eslint/eslint-plugin",
+                  "resolved": "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.70.0.tgz",
+                  "version": "8.70.0"
+                },
+                "@typescript-eslint/parser": {
+                  "deduped": true,
+                  "dedupedDependenciesCount": 30,
+                  "from": "@typescript-eslint/parser",
+                  "resolved": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.70.0.tgz",
+                  "version": "8.70.0"
+                },
+                "@typescript-eslint/typescript-estree": {
+                  "deduped": true,
+                  "dedupedDependenciesCount": 19,
+                  "from": "@typescript-eslint/typescript-estree",
+                  "resolved": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.70.0.tgz",
+                  "version": "8.70.0"
+                },
+                "@typescript-eslint/utils": {
+                  "deduped": true,
+                  "dedupedDependenciesCount": 6,
+                  "from": "@typescript-eslint/utils",
+                  "resolved": "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.70.0.tgz",
+                  "version": "8.70.0"
+                },
+                "eslint": {
+                  "deduped": true,
+                  "dedupedDependenciesCount": 103,
+                  "from": "eslint",
+                  "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                  "version": "10.10.0"
+                },
+                "typescript": {
+                  "from": "typescript",
+                  "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                  "version": "6.0.3"
+                }
+              },
+              "from": "typescript-eslint",
+              "resolved": "https://registry.npmjs.org/typescript-eslint/-/typescript-eslint-8.70.0.tgz",
+              "version": "8.70.0"
+            },
+            "zod": {
+              "from": "zod",
+              "resolved": "https://registry.npmjs.org/zod/-/zod-4.6.5.tgz",
+              "version": "4.6.5"
+            }
+          },
+          "name": "world-atlas",
+          "private": true,
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/api",
+          "private": true,
+          "unsavedDependencies": {
+            "@eslint/js": {
+              "from": "@eslint/js",
+              "version": "link:../../node_modules/.pnpm/@eslint+js@10.0.1_eslint@10.10.0/node_modules/@eslint/js"
+            },
+            "eslint": {
+              "from": "eslint",
+              "version": "link:../../node_modules/.pnpm/eslint@10.10.0/node_modules/eslint"
+            },
+            "globals": {
+              "from": "globals",
+              "version": "link:../../node_modules/.pnpm/globals@17.12.0/node_modules/globals"
+            },
+            "prettier": {
+              "from": "prettier",
+              "version": "link:../../node_modules/.pnpm/prettier@3.9.6/node_modules/prettier"
+            },
+            "typescript": {
+              "from": "typescript",
+              "version": "link:../../node_modules/.pnpm/typescript@6.0.3/node_modules/typescript"
+            },
+            "typescript-eslint": {
+              "from": "typescript-eslint",
+              "version": "link:../../node_modules/.pnpm/typescript-eslint@8.70.0_eslint@10.10.0_typescript@6.0.3/node_modules/typescript-eslint"
+            },
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/contracts",
+          "private": true,
+          "unsavedDependencies": {
+            "@eslint/js": {
+              "from": "@eslint/js",
+              "version": "link:../../node_modules/.pnpm/@eslint+js@10.0.1_eslint@10.10.0/node_modules/@eslint/js"
+            },
+            "eslint": {
+              "from": "eslint",
+              "version": "link:../../node_modules/.pnpm/eslint@10.10.0/node_modules/eslint"
+            },
+            "globals": {
+              "from": "globals",
+              "version": "link:../../node_modules/.pnpm/globals@17.12.0/node_modules/globals"
+            },
+            "prettier": {
+              "from": "prettier",
+              "version": "link:../../node_modules/.pnpm/prettier@3.9.6/node_modules/prettier"
+            },
+            "typescript": {
+              "from": "typescript",
+              "version": "link:../../node_modules/.pnpm/typescript@6.0.3/node_modules/typescript"
+            },
+            "typescript-eslint": {
+              "from": "typescript-eslint",
+              "version": "link:../../node_modules/.pnpm/typescript-eslint@8.70.0_eslint@10.10.0_typescript@6.0.3/node_modules/typescript-eslint"
+            },
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/web",
+          "private": true,
+          "unsavedDependencies": {
+            "@eslint/js": {
+              "from": "@eslint/js",
+              "version": "link:../../node_modules/.pnpm/@eslint+js@10.0.1_eslint@10.10.0/node_modules/@eslint/js"
+            },
+            "eslint": {
+              "from": "eslint",
+              "version": "link:../../node_modules/.pnpm/eslint@10.10.0/node_modules/eslint"
+            },
+            "globals": {
+              "from": "globals",
+              "version": "link:../../node_modules/.pnpm/globals@17.12.0/node_modules/globals"
+            },
+            "prettier": {
+              "from": "prettier",
+              "version": "link:../../node_modules/.pnpm/prettier@3.9.6/node_modules/prettier"
+            },
+            "typescript": {
+              "from": "typescript",
+              "version": "link:../../node_modules/.pnpm/typescript@6.0.3/node_modules/typescript"
+            },
+            "typescript-eslint": {
+              "from": "typescript-eslint",
+              "version": "link:../../node_modules/.pnpm/typescript-eslint@8.70.0_eslint@10.10.0_typescript@6.0.3/node_modules/typescript-eslint"
+            },
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        }
+      ],
+      "install_exit": 0,
+      "directory": ".verification\\install-1789389654701\\a"
+    },
+    {
+      "label": "b",
+      "lock_sha256": "64f9bcd83d600260677533a9ac7b57823d8b5fae837b269c48e79421089d0fcc",
+      "graph_sha256": "39177f37080e5e55047e844d4be09eb3b5516c3b8169788fe96de4dad8325b43",
+      "graph": [
+        {
+          "devDependencies": {
+            "@eslint/js": {
+              "dependencies": {
+                "eslint": {
+                  "dependencies": {
+                    "@eslint-community/eslint-utils": {
+                      "dependencies": {
+                        "eslint": {
+                          "from": "eslint",
+                          "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                          "version": "10.10.0"
+                        },
+                        "eslint-visitor-keys": {
+                          "from": "eslint-visitor-keys",
+                          "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz",
+                          "version": "3.4.3"
+                        }
+                      },
+                      "from": "@eslint-community/eslint-utils",
+                      "resolved": "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.10.1.tgz",
+                      "version": "4.10.1"
+                    },
+                    "@eslint-community/regexpp": {
+                      "from": "@eslint-community/regexpp",
+                      "resolved": "https://registry.npmjs.org/@eslint-community/regexpp/-/regexpp-4.12.2.tgz",
+                      "version": "4.12.2"
+                    },
+                    "@eslint/config-array": {
+                      "dependencies": {
+                        "@eslint/object-schema": {
+                          "from": "@eslint/object-schema",
+                          "resolved": "https://registry.npmjs.org/@eslint/object-schema/-/object-schema-3.0.5.tgz",
+                          "version": "3.0.5"
+                        },
+                        "debug": {
+                          "dependencies": {
+                            "ms": {
+                              "from": "ms",
+                              "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+                              "version": "2.1.3"
+                            }
+                          },
+                          "from": "debug",
+                          "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                          "version": "4.4.3"
+                        },
+                        "minimatch": {
+                          "dependencies": {
+                            "brace-expansion": {
+                              "dependencies": {
+                                "balanced-match": {
+                                  "from": "balanced-match",
+                                  "resolved": "https://registry.npmjs.org/balanced-match/-/balanced-match-4.0.4.tgz",
+                                  "version": "4.0.4"
+                                }
+                              },
+                              "from": "brace-expansion",
+                              "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-5.0.9.tgz",
+                              "version": "5.0.9"
+                            }
+                          },
+                          "from": "minimatch",
+                          "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-10.2.6.tgz",
+                          "version": "10.2.6"
+                        }
+                      },
+                      "from": "@eslint/config-array",
+                      "resolved": "https://registry.npmjs.org/@eslint/config-array/-/config-array-0.23.5.tgz",
+                      "version": "0.23.5"
+                    },
+                    "@eslint/config-helpers": {
+                      "dependencies": {
+                        "@eslint/core": {
+                          "dependencies": {
+                            "@types/json-schema": {
+                              "from": "@types/json-schema",
+                              "resolved": "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz",
+                              "version": "7.0.15"
+                            }
+                          },
+                          "from": "@eslint/core",
+                          "resolved": "https://registry.npmjs.org/@eslint/core/-/core-1.2.1.tgz",
+                          "version": "1.2.1"
+                        }
+                      },
+                      "from": "@eslint/config-helpers",
+                      "resolved": "https://registry.npmjs.org/@eslint/config-helpers/-/config-helpers-0.7.0.tgz",
+                      "version": "0.7.0"
+                    },
+                    "@eslint/core": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 1,
+                      "from": "@eslint/core",
+                      "resolved": "https://registry.npmjs.org/@eslint/core/-/core-1.2.1.tgz",
+                      "version": "1.2.1"
+                    },
+                    "@eslint/plugin-kit": {
+                      "dependencies": {
+                        "@eslint/core": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 1,
+                          "from": "@eslint/core",
+                          "resolved": "https://registry.npmjs.org/@eslint/core/-/core-1.2.1.tgz",
+                          "version": "1.2.1"
+                        },
+                        "levn": {
+                          "dependencies": {
+                            "prelude-ls": {
+                              "from": "prelude-ls",
+                              "resolved": "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz",
+                              "version": "1.2.1"
+                            },
+                            "type-check": {
+                              "dependencies": {
+                                "prelude-ls": {
+                                  "from": "prelude-ls",
+                                  "resolved": "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz",
+                                  "version": "1.2.1"
+                                }
+                              },
+                              "from": "type-check",
+                              "resolved": "https://registry.npmjs.org/type-check/-/type-check-0.4.0.tgz",
+                              "version": "0.4.0"
+                            }
+                          },
+                          "from": "levn",
+                          "resolved": "https://registry.npmjs.org/levn/-/levn-0.4.1.tgz",
+                          "version": "0.4.1"
+                        }
+                      },
+                      "from": "@eslint/plugin-kit",
+                      "resolved": "https://registry.npmjs.org/@eslint/plugin-kit/-/plugin-kit-0.7.3.tgz",
+                      "version": "0.7.3"
+                    },
+                    "@humanfs/node": {
+                      "dependencies": {
+                        "@humanfs/core": {
+                          "dependencies": {
+                            "@humanfs/types": {
+                              "from": "@humanfs/types",
+                              "resolved": "https://registry.npmjs.org/@humanfs/types/-/types-0.15.0.tgz",
+                              "version": "0.15.0"
+                            }
+                          },
+                          "from": "@humanfs/core",
+                          "resolved": "https://registry.npmjs.org/@humanfs/core/-/core-0.19.2.tgz",
+                          "version": "0.19.2"
+                        },
+                        "@humanfs/types": {
+                          "from": "@humanfs/types",
+                          "resolved": "https://registry.npmjs.org/@humanfs/types/-/types-0.15.0.tgz",
+                          "version": "0.15.0"
+                        },
+                        "@humanwhocodes/retry": {
+                          "from": "@humanwhocodes/retry",
+                          "resolved": "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.4.3.tgz",
+                          "version": "0.4.3"
+                        }
+                      },
+                      "from": "@humanfs/node",
+                      "resolved": "https://registry.npmjs.org/@humanfs/node/-/node-0.16.8.tgz",
+                      "version": "0.16.8"
+                    },
+                    "@humanwhocodes/module-importer": {
+                      "from": "@humanwhocodes/module-importer",
+                      "resolved": "https://registry.npmjs.org/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz",
+                      "version": "1.0.1"
+                    },
+                    "@humanwhocodes/retry": {
+                      "from": "@humanwhocodes/retry",
+                      "resolved": "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.4.3.tgz",
+                      "version": "0.4.3"
+                    },
+                    "@types/estree": {
+                      "from": "@types/estree",
+                      "resolved": "https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz",
+                      "version": "1.0.9"
+                    },
+                    "ajv": {
+                      "dependencies": {
+                        "fast-deep-equal": {
+                          "from": "fast-deep-equal",
+                          "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+                          "version": "3.1.3"
+                        },
+                        "fast-json-stable-stringify": {
+                          "from": "fast-json-stable-stringify",
+                          "resolved": "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz",
+                          "version": "2.1.0"
+                        },
+                        "json-schema-traverse": {
+                          "from": "json-schema-traverse",
+                          "resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
+                          "version": "0.4.1"
+                        },
+                        "uri-js": {
+                          "dependencies": {
+                            "punycode": {
+                              "from": "punycode",
+                              "resolved": "https://registry.npmjs.org/punycode/-/punycode-2.3.1.tgz",
+                              "version": "2.3.1"
+                            }
+                          },
+                          "from": "uri-js",
+                          "resolved": "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz",
+                          "version": "4.4.1"
+                        }
+                      },
+                      "from": "ajv",
+                      "resolved": "https://registry.npmjs.org/ajv/-/ajv-6.15.0.tgz",
+                      "version": "6.15.0"
+                    },
+                    "cross-spawn": {
+                      "dependencies": {
+                        "path-key": {
+                          "from": "path-key",
+                          "resolved": "https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz",
+                          "version": "3.1.1"
+                        },
+                        "shebang-command": {
+                          "dependencies": {
+                            "shebang-regex": {
+                              "from": "shebang-regex",
+                              "resolved": "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz",
+                              "version": "3.0.0"
+                            }
+                          },
+                          "from": "shebang-command",
+                          "resolved": "https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz",
+                          "version": "2.0.0"
+                        },
+                        "which": {
+                          "dependencies": {
+                            "isexe": {
+                              "from": "isexe",
+                              "resolved": "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz",
+                              "version": "2.0.0"
+                            }
+                          },
+                          "from": "which",
+                          "resolved": "https://registry.npmjs.org/which/-/which-2.0.2.tgz",
+                          "version": "2.0.2"
+                        }
+                      },
+                      "from": "cross-spawn",
+                      "resolved": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz",
+                      "version": "7.0.6"
+                    },
+                    "debug": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 1,
+                      "from": "debug",
+                      "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                      "version": "4.4.3"
+                    },
+                    "escape-string-regexp": {
+                      "from": "escape-string-regexp",
+                      "resolved": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz",
+                      "version": "4.0.0"
+                    },
+                    "eslint-scope": {
+                      "dependencies": {
+                        "@types/esrecurse": {
+                          "from": "@types/esrecurse",
+                          "resolved": "https://registry.npmjs.org/@types/esrecurse/-/esrecurse-4.3.1.tgz",
+                          "version": "4.3.1"
+                        },
+                        "@types/estree": {
+                          "from": "@types/estree",
+                          "resolved": "https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz",
+                          "version": "1.0.9"
+                        },
+                        "esrecurse": {
+                          "dependencies": {
+                            "estraverse": {
+                              "from": "estraverse",
+                              "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz",
+                              "version": "5.3.0"
+                            }
+                          },
+                          "from": "esrecurse",
+                          "resolved": "https://registry.npmjs.org/esrecurse/-/esrecurse-4.3.0.tgz",
+                          "version": "4.3.0"
+                        },
+                        "estraverse": {
+                          "from": "estraverse",
+                          "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz",
+                          "version": "5.3.0"
+                        }
+                      },
+                      "from": "eslint-scope",
+                      "resolved": "https://registry.npmjs.org/eslint-scope/-/eslint-scope-9.1.2.tgz",
+                      "version": "9.1.2"
+                    },
+                    "eslint-visitor-keys": {
+                      "from": "eslint-visitor-keys",
+                      "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-5.0.1.tgz",
+                      "version": "5.0.1"
+                    },
+                    "espree": {
+                      "dependencies": {
+                        "acorn": {
+                          "from": "acorn",
+                          "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.18.0.tgz",
+                          "version": "8.18.0"
+                        },
+                        "acorn-jsx": {
+                          "dependencies": {
+                            "acorn": {
+                              "from": "acorn",
+                              "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.18.0.tgz",
+                              "version": "8.18.0"
+                            }
+                          },
+                          "from": "acorn-jsx",
+                          "resolved": "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz",
+                          "version": "5.3.2"
+                        },
+                        "eslint-visitor-keys": {
+                          "from": "eslint-visitor-keys",
+                          "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-5.0.1.tgz",
+                          "version": "5.0.1"
+                        }
+                      },
+                      "from": "espree",
+                      "resolved": "https://registry.npmjs.org/espree/-/espree-11.2.0.tgz",
+                      "version": "11.2.0"
+                    },
+                    "esquery": {
+                      "dependencies": {
+                        "estraverse": {
+                          "from": "estraverse",
+                          "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz",
+                          "version": "5.3.0"
+                        }
+                      },
+                      "from": "esquery",
+                      "resolved": "https://registry.npmjs.org/esquery/-/esquery-1.7.0.tgz",
+                      "version": "1.7.0"
+                    },
+                    "esutils": {
+                      "from": "esutils",
+                      "resolved": "https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz",
+                      "version": "2.0.3"
+                    },
+                    "fast-deep-equal": {
+                      "from": "fast-deep-equal",
+                      "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+                      "version": "3.1.3"
+                    },
+                    "file-entry-cache": {
+                      "dependencies": {
+                        "flat-cache": {
+                          "dependencies": {
+                            "cacheable": {
+                              "dependencies": {
+                                "@cacheable/memory": {
+                                  "dependencies": {
+                                    "@cacheable/utils": {
+                                      "dependencies": {
+                                        "hashery": {
+                                          "dependencies": {
+                                            "hookified": {
+                                              "from": "hookified",
+                                              "resolved": "https://registry.npmjs.org/hookified/-/hookified-1.15.1.tgz",
+                                              "version": "1.15.1"
+                                            }
+                                          },
+                                          "from": "hashery",
+                                          "resolved": "https://registry.npmjs.org/hashery/-/hashery-1.5.1.tgz",
+                                          "version": "1.5.1"
+                                        },
+                                        "keyv": {
+                                          "dependencies": {
+                                            "@keyv/serialize": {
+                                              "from": "@keyv/serialize",
+                                              "resolved": "https://registry.npmjs.org/@keyv/serialize/-/serialize-1.1.1.tgz",
+                                              "version": "1.1.1"
+                                            }
+                                          },
+                                          "from": "keyv",
+                                          "resolved": "https://registry.npmjs.org/keyv/-/keyv-5.6.0.tgz",
+                                          "version": "5.6.0"
+                                        }
+                                      },
+                                      "from": "@cacheable/utils",
+                                      "resolved": "https://registry.npmjs.org/@cacheable/utils/-/utils-2.5.0.tgz",
+                                      "version": "2.5.0"
+                                    },
+                                    "@keyv/bigmap": {
+                                      "dependencies": {
+                                        "hashery": {
+                                          "deduped": true,
+                                          "dedupedDependenciesCount": 1,
+                                          "from": "hashery",
+                                          "resolved": "https://registry.npmjs.org/hashery/-/hashery-1.5.1.tgz",
+                                          "version": "1.5.1"
+                                        },
+                                        "hookified": {
+                                          "from": "hookified",
+                                          "resolved": "https://registry.npmjs.org/hookified/-/hookified-1.15.1.tgz",
+                                          "version": "1.15.1"
+                                        },
+                                        "keyv": {
+                                          "deduped": true,
+                                          "dedupedDependenciesCount": 1,
+                                          "from": "keyv",
+                                          "resolved": "https://registry.npmjs.org/keyv/-/keyv-5.6.0.tgz",
+                                          "version": "5.6.0"
+                                        }
+                                      },
+                                      "from": "@keyv/bigmap",
+                                      "resolved": "https://registry.npmjs.org/@keyv/bigmap/-/bigmap-1.3.1.tgz",
+                                      "version": "1.3.1"
+                                    },
+                                    "hookified": {
+                                      "from": "hookified",
+                                      "resolved": "https://registry.npmjs.org/hookified/-/hookified-1.15.1.tgz",
+                                      "version": "1.15.1"
+                                    },
+                                    "keyv": {
+                                      "deduped": true,
+                                      "dedupedDependenciesCount": 1,
+                                      "from": "keyv",
+                                      "resolved": "https://registry.npmjs.org/keyv/-/keyv-5.6.0.tgz",
+                                      "version": "5.6.0"
+                                    }
+                                  },
+                                  "from": "@cacheable/memory",
+                                  "resolved": "https://registry.npmjs.org/@cacheable/memory/-/memory-2.2.0.tgz",
+                                  "version": "2.2.0"
+                                },
+                                "@cacheable/utils": {
+                                  "deduped": true,
+                                  "dedupedDependenciesCount": 4,
+                                  "from": "@cacheable/utils",
+                                  "resolved": "https://registry.npmjs.org/@cacheable/utils/-/utils-2.5.0.tgz",
+                                  "version": "2.5.0"
+                                },
+                                "hookified": {
+                                  "from": "hookified",
+                                  "resolved": "https://registry.npmjs.org/hookified/-/hookified-1.15.1.tgz",
+                                  "version": "1.15.1"
+                                },
+                                "keyv": {
+                                  "deduped": true,
+                                  "dedupedDependenciesCount": 1,
+                                  "from": "keyv",
+                                  "resolved": "https://registry.npmjs.org/keyv/-/keyv-5.6.0.tgz",
+                                  "version": "5.6.0"
+                                },
+                                "qified": {
+                                  "dependencies": {
+                                    "hookified": {
+                                      "from": "hookified",
+                                      "resolved": "https://registry.npmjs.org/hookified/-/hookified-2.2.0.tgz",
+                                      "version": "2.2.0"
+                                    }
+                                  },
+                                  "from": "qified",
+                                  "resolved": "https://registry.npmjs.org/qified/-/qified-0.10.1.tgz",
+                                  "version": "0.10.1"
+                                }
+                              },
+                              "from": "cacheable",
+                              "resolved": "https://registry.npmjs.org/cacheable/-/cacheable-2.5.0.tgz",
+                              "version": "2.5.0"
+                            },
+                            "flatted": {
+                              "from": "flatted",
+                              "resolved": "https://registry.npmjs.org/flatted/-/flatted-3.4.4.tgz",
+                              "version": "3.4.4"
+                            },
+                            "hookified": {
+                              "from": "hookified",
+                              "resolved": "https://registry.npmjs.org/hookified/-/hookified-1.15.1.tgz",
+                              "version": "1.15.1"
+                            }
+                          },
+                          "from": "flat-cache",
+                          "resolved": "https://registry.npmjs.org/flat-cache/-/flat-cache-6.1.23.tgz",
+                          "version": "6.1.23"
+                        }
+                      },
+                      "from": "file-entry-cache",
+                      "resolved": "https://registry.npmjs.org/file-entry-cache/-/file-entry-cache-11.1.5.tgz",
+                      "version": "11.1.5"
+                    },
+                    "find-up": {
+                      "dependencies": {
+                        "locate-path": {
+                          "dependencies": {
+                            "p-locate": {
+                              "dependencies": {
+                                "p-limit": {
+                                  "dependencies": {
+                                    "yocto-queue": {
+                                      "from": "yocto-queue",
+                                      "resolved": "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz",
+                                      "version": "0.1.0"
+                                    }
+                                  },
+                                  "from": "p-limit",
+                                  "resolved": "https://registry.npmjs.org/p-limit/-/p-limit-3.1.0.tgz",
+                                  "version": "3.1.0"
+                                }
+                              },
+                              "from": "p-locate",
+                              "resolved": "https://registry.npmjs.org/p-locate/-/p-locate-5.0.0.tgz",
+                              "version": "5.0.0"
+                            }
+                          },
+                          "from": "locate-path",
+                          "resolved": "https://registry.npmjs.org/locate-path/-/locate-path-6.0.0.tgz",
+                          "version": "6.0.0"
+                        },
+                        "path-exists": {
+                          "from": "path-exists",
+                          "resolved": "https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz",
+                          "version": "4.0.0"
+                        }
+                      },
+                      "from": "find-up",
+                      "resolved": "https://registry.npmjs.org/find-up/-/find-up-5.0.0.tgz",
+                      "version": "5.0.0"
+                    },
+                    "glob-parent": {
+                      "dependencies": {
+                        "is-glob": {
+                          "dependencies": {
+                            "is-extglob": {
+                              "from": "is-extglob",
+                              "resolved": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz",
+                              "version": "2.1.1"
+                            }
+                          },
+                          "from": "is-glob",
+                          "resolved": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz",
+                          "version": "4.0.3"
+                        }
+                      },
+                      "from": "glob-parent",
+                      "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-6.0.2.tgz",
+                      "version": "6.0.2"
+                    },
+                    "ignore": {
+                      "from": "ignore",
+                      "resolved": "https://registry.npmjs.org/ignore/-/ignore-5.3.2.tgz",
+                      "version": "5.3.2"
+                    },
+                    "imurmurhash": {
+                      "from": "imurmurhash",
+                      "resolved": "https://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz",
+                      "version": "0.1.4"
+                    },
+                    "is-glob": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 1,
+                      "from": "is-glob",
+                      "resolved": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz",
+                      "version": "4.0.3"
+                    },
+                    "json-stable-stringify-without-jsonify": {
+                      "from": "json-stable-stringify-without-jsonify",
+                      "resolved": "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz",
+                      "version": "1.0.1"
+                    },
+                    "minimatch": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 2,
+                      "from": "minimatch",
+                      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-10.2.6.tgz",
+                      "version": "10.2.6"
+                    },
+                    "natural-compare": {
+                      "from": "natural-compare",
+                      "resolved": "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz",
+                      "version": "1.4.0"
+                    },
+                    "optionator": {
+                      "dependencies": {
+                        "deep-is": {
+                          "from": "deep-is",
+                          "resolved": "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz",
+                          "version": "0.1.4"
+                        },
+                        "fast-levenshtein": {
+                          "from": "fast-levenshtein",
+                          "resolved": "https://registry.npmjs.org/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz",
+                          "version": "2.0.6"
+                        },
+                        "levn": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 3,
+                          "from": "levn",
+                          "resolved": "https://registry.npmjs.org/levn/-/levn-0.4.1.tgz",
+                          "version": "0.4.1"
+                        },
+                        "prelude-ls": {
+                          "from": "prelude-ls",
+                          "resolved": "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz",
+                          "version": "1.2.1"
+                        },
+                        "type-check": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 1,
+                          "from": "type-check",
+                          "resolved": "https://registry.npmjs.org/type-check/-/type-check-0.4.0.tgz",
+                          "version": "0.4.0"
+                        },
+                        "word-wrap": {
+                          "from": "word-wrap",
+                          "resolved": "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.5.tgz",
+                          "version": "1.2.5"
+                        }
+                      },
+                      "from": "optionator",
+                      "resolved": "https://registry.npmjs.org/optionator/-/optionator-0.9.4.tgz",
+                      "version": "0.9.4"
+                    }
+                  },
+                  "from": "eslint",
+                  "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                  "version": "10.10.0"
+                }
+              },
+              "from": "@eslint/js",
+              "resolved": "https://registry.npmjs.org/@eslint/js/-/js-10.0.1.tgz",
+              "version": "10.0.1"
+            },
+            "eslint": {
+              "deduped": true,
+              "dedupedDependenciesCount": 103,
+              "from": "eslint",
+              "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+              "version": "10.10.0"
+            },
+            "globals": {
+              "from": "globals",
+              "resolved": "https://registry.npmjs.org/globals/-/globals-17.12.0.tgz",
+              "version": "17.12.0"
+            },
+            "prettier": {
+              "from": "prettier",
+              "resolved": "https://registry.npmjs.org/prettier/-/prettier-3.9.6.tgz",
+              "version": "3.9.6"
+            },
+            "typescript": {
+              "from": "typescript",
+              "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+              "version": "6.0.3"
+            },
+            "typescript-eslint": {
+              "dependencies": {
+                "@typescript-eslint/eslint-plugin": {
+                  "dependencies": {
+                    "@eslint-community/regexpp": {
+                      "from": "@eslint-community/regexpp",
+                      "resolved": "https://registry.npmjs.org/@eslint-community/regexpp/-/regexpp-4.12.2.tgz",
+                      "version": "4.12.2"
+                    },
+                    "@typescript-eslint/parser": {
+                      "dependencies": {
+                        "@typescript-eslint/scope-manager": {
+                          "dependencies": {
+                            "@typescript-eslint/types": {
+                              "from": "@typescript-eslint/types",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/visitor-keys": {
+                              "dependencies": {
+                                "@typescript-eslint/types": {
+                                  "from": "@typescript-eslint/types",
+                                  "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                                  "version": "8.70.0"
+                                },
+                                "eslint-visitor-keys": {
+                                  "from": "eslint-visitor-keys",
+                                  "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-5.0.1.tgz",
+                                  "version": "5.0.1"
+                                }
+                              },
+                              "from": "@typescript-eslint/visitor-keys",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.70.0.tgz",
+                              "version": "8.70.0"
+                            }
+                          },
+                          "from": "@typescript-eslint/scope-manager",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "@typescript-eslint/types": {
+                          "from": "@typescript-eslint/types",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "@typescript-eslint/typescript-estree": {
+                          "dependencies": {
+                            "@typescript-eslint/project-service": {
+                              "dependencies": {
+                                "@typescript-eslint/tsconfig-utils": {
+                                  "dependencies": {
+                                    "typescript": {
+                                      "from": "typescript",
+                                      "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                                      "version": "6.0.3"
+                                    }
+                                  },
+                                  "from": "@typescript-eslint/tsconfig-utils",
+                                  "resolved": "https://registry.npmjs.org/@typescript-eslint/tsconfig-utils/-/tsconfig-utils-8.70.0.tgz",
+                                  "version": "8.70.0"
+                                },
+                                "@typescript-eslint/types": {
+                                  "from": "@typescript-eslint/types",
+                                  "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                                  "version": "8.70.0"
+                                },
+                                "debug": {
+                                  "deduped": true,
+                                  "dedupedDependenciesCount": 1,
+                                  "from": "debug",
+                                  "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                                  "version": "4.4.3"
+                                },
+                                "typescript": {
+                                  "from": "typescript",
+                                  "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                                  "version": "6.0.3"
+                                }
+                              },
+                              "from": "@typescript-eslint/project-service",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/project-service/-/project-service-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/tsconfig-utils": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 1,
+                              "from": "@typescript-eslint/tsconfig-utils",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/tsconfig-utils/-/tsconfig-utils-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/types": {
+                              "from": "@typescript-eslint/types",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/visitor-keys": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 2,
+                              "from": "@typescript-eslint/visitor-keys",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "debug": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 1,
+                              "from": "debug",
+                              "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                              "version": "4.4.3"
+                            },
+                            "minimatch": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 2,
+                              "from": "minimatch",
+                              "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-10.2.6.tgz",
+                              "version": "10.2.6"
+                            },
+                            "semver": {
+                              "from": "semver",
+                              "resolved": "https://registry.npmjs.org/semver/-/semver-7.8.5.tgz",
+                              "version": "7.8.5"
+                            },
+                            "tinyglobby": {
+                              "dependencies": {
+                                "fdir": {
+                                  "dependencies": {
+                                    "picomatch": {
+                                      "from": "picomatch",
+                                      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+                                      "version": "4.0.7"
+                                    }
+                                  },
+                                  "from": "fdir",
+                                  "resolved": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
+                                  "version": "6.5.0"
+                                },
+                                "picomatch": {
+                                  "from": "picomatch",
+                                  "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+                                  "version": "4.0.7"
+                                }
+                              },
+                              "from": "tinyglobby",
+                              "resolved": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz",
+                              "version": "0.2.17"
+                            },
+                            "ts-api-utils": {
+                              "dependencies": {
+                                "typescript": {
+                                  "from": "typescript",
+                                  "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                                  "version": "6.0.3"
+                                }
+                              },
+                              "from": "ts-api-utils",
+                              "resolved": "https://registry.npmjs.org/ts-api-utils/-/ts-api-utils-2.5.0.tgz",
+                              "version": "2.5.0"
+                            },
+                            "typescript": {
+                              "from": "typescript",
+                              "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                              "version": "6.0.3"
+                            }
+                          },
+                          "from": "@typescript-eslint/typescript-estree",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "@typescript-eslint/visitor-keys": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 2,
+                          "from": "@typescript-eslint/visitor-keys",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "debug": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 1,
+                          "from": "debug",
+                          "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                          "version": "4.4.3"
+                        },
+                        "eslint": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 103,
+                          "from": "eslint",
+                          "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                          "version": "10.10.0"
+                        },
+                        "typescript": {
+                          "from": "typescript",
+                          "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                          "version": "6.0.3"
+                        }
+                      },
+                      "from": "@typescript-eslint/parser",
+                      "resolved": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.70.0.tgz",
+                      "version": "8.70.0"
+                    },
+                    "@typescript-eslint/scope-manager": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 4,
+                      "from": "@typescript-eslint/scope-manager",
+                      "resolved": "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.70.0.tgz",
+                      "version": "8.70.0"
+                    },
+                    "@typescript-eslint/type-utils": {
+                      "dependencies": {
+                        "@typescript-eslint/types": {
+                          "from": "@typescript-eslint/types",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "@typescript-eslint/typescript-estree": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 19,
+                          "from": "@typescript-eslint/typescript-estree",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "@typescript-eslint/utils": {
+                          "dependencies": {
+                            "@eslint-community/eslint-utils": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 2,
+                              "from": "@eslint-community/eslint-utils",
+                              "resolved": "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.10.1.tgz",
+                              "version": "4.10.1"
+                            },
+                            "@typescript-eslint/scope-manager": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 4,
+                              "from": "@typescript-eslint/scope-manager",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/types": {
+                              "from": "@typescript-eslint/types",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "@typescript-eslint/typescript-estree": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 19,
+                              "from": "@typescript-eslint/typescript-estree",
+                              "resolved": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.70.0.tgz",
+                              "version": "8.70.0"
+                            },
+                            "eslint": {
+                              "deduped": true,
+                              "dedupedDependenciesCount": 103,
+                              "from": "eslint",
+                              "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                              "version": "10.10.0"
+                            },
+                            "typescript": {
+                              "from": "typescript",
+                              "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                              "version": "6.0.3"
+                            }
+                          },
+                          "from": "@typescript-eslint/utils",
+                          "resolved": "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.70.0.tgz",
+                          "version": "8.70.0"
+                        },
+                        "debug": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 1,
+                          "from": "debug",
+                          "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+                          "version": "4.4.3"
+                        },
+                        "eslint": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 103,
+                          "from": "eslint",
+                          "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                          "version": "10.10.0"
+                        },
+                        "ts-api-utils": {
+                          "deduped": true,
+                          "dedupedDependenciesCount": 1,
+                          "from": "ts-api-utils",
+                          "resolved": "https://registry.npmjs.org/ts-api-utils/-/ts-api-utils-2.5.0.tgz",
+                          "version": "2.5.0"
+                        },
+                        "typescript": {
+                          "from": "typescript",
+                          "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                          "version": "6.0.3"
+                        }
+                      },
+                      "from": "@typescript-eslint/type-utils",
+                      "resolved": "https://registry.npmjs.org/@typescript-eslint/type-utils/-/type-utils-8.70.0.tgz",
+                      "version": "8.70.0"
+                    },
+                    "@typescript-eslint/utils": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 6,
+                      "from": "@typescript-eslint/utils",
+                      "resolved": "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.70.0.tgz",
+                      "version": "8.70.0"
+                    },
+                    "@typescript-eslint/visitor-keys": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 2,
+                      "from": "@typescript-eslint/visitor-keys",
+                      "resolved": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.70.0.tgz",
+                      "version": "8.70.0"
+                    },
+                    "eslint": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 103,
+                      "from": "eslint",
+                      "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                      "version": "10.10.0"
+                    },
+                    "ignore": {
+                      "from": "ignore",
+                      "resolved": "https://registry.npmjs.org/ignore/-/ignore-7.0.9.tgz",
+                      "version": "7.0.9"
+                    },
+                    "natural-compare": {
+                      "from": "natural-compare",
+                      "resolved": "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz",
+                      "version": "1.4.0"
+                    },
+                    "ts-api-utils": {
+                      "deduped": true,
+                      "dedupedDependenciesCount": 1,
+                      "from": "ts-api-utils",
+                      "resolved": "https://registry.npmjs.org/ts-api-utils/-/ts-api-utils-2.5.0.tgz",
+                      "version": "2.5.0"
+                    },
+                    "typescript": {
+                      "from": "typescript",
+                      "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                      "version": "6.0.3"
+                    }
+                  },
+                  "from": "@typescript-eslint/eslint-plugin",
+                  "resolved": "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.70.0.tgz",
+                  "version": "8.70.0"
+                },
+                "@typescript-eslint/parser": {
+                  "deduped": true,
+                  "dedupedDependenciesCount": 30,
+                  "from": "@typescript-eslint/parser",
+                  "resolved": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.70.0.tgz",
+                  "version": "8.70.0"
+                },
+                "@typescript-eslint/typescript-estree": {
+                  "deduped": true,
+                  "dedupedDependenciesCount": 19,
+                  "from": "@typescript-eslint/typescript-estree",
+                  "resolved": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.70.0.tgz",
+                  "version": "8.70.0"
+                },
+                "@typescript-eslint/utils": {
+                  "deduped": true,
+                  "dedupedDependenciesCount": 6,
+                  "from": "@typescript-eslint/utils",
+                  "resolved": "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.70.0.tgz",
+                  "version": "8.70.0"
+                },
+                "eslint": {
+                  "deduped": true,
+                  "dedupedDependenciesCount": 103,
+                  "from": "eslint",
+                  "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.10.0.tgz",
+                  "version": "10.10.0"
+                },
+                "typescript": {
+                  "from": "typescript",
+                  "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+                  "version": "6.0.3"
+                }
+              },
+              "from": "typescript-eslint",
+              "resolved": "https://registry.npmjs.org/typescript-eslint/-/typescript-eslint-8.70.0.tgz",
+              "version": "8.70.0"
+            },
+            "zod": {
+              "from": "zod",
+              "resolved": "https://registry.npmjs.org/zod/-/zod-4.6.5.tgz",
+              "version": "4.6.5"
+            }
+          },
+          "name": "world-atlas",
+          "private": true,
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/api",
+          "private": true,
+          "unsavedDependencies": {
+            "@eslint/js": {
+              "from": "@eslint/js",
+              "version": "link:../../node_modules/.pnpm/@eslint+js@10.0.1_eslint@10.10.0/node_modules/@eslint/js"
+            },
+            "eslint": {
+              "from": "eslint",
+              "version": "link:../../node_modules/.pnpm/eslint@10.10.0/node_modules/eslint"
+            },
+            "globals": {
+              "from": "globals",
+              "version": "link:../../node_modules/.pnpm/globals@17.12.0/node_modules/globals"
+            },
+            "prettier": {
+              "from": "prettier",
+              "version": "link:../../node_modules/.pnpm/prettier@3.9.6/node_modules/prettier"
+            },
+            "typescript": {
+              "from": "typescript",
+              "version": "link:../../node_modules/.pnpm/typescript@6.0.3/node_modules/typescript"
+            },
+            "typescript-eslint": {
+              "from": "typescript-eslint",
+              "version": "link:../../node_modules/.pnpm/typescript-eslint@8.70.0_eslint@10.10.0_typescript@6.0.3/node_modules/typescript-eslint"
+            },
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/contracts",
+          "private": true,
+          "unsavedDependencies": {
+            "@eslint/js": {
+              "from": "@eslint/js",
+              "version": "link:../../node_modules/.pnpm/@eslint+js@10.0.1_eslint@10.10.0/node_modules/@eslint/js"
+            },
+            "eslint": {
+              "from": "eslint",
+              "version": "link:../../node_modules/.pnpm/eslint@10.10.0/node_modules/eslint"
+            },
+            "globals": {
+              "from": "globals",
+              "version": "link:../../node_modules/.pnpm/globals@17.12.0/node_modules/globals"
+            },
+            "prettier": {
+              "from": "prettier",
+              "version": "link:../../node_modules/.pnpm/prettier@3.9.6/node_modules/prettier"
+            },
+            "typescript": {
+              "from": "typescript",
+              "version": "link:../../node_modules/.pnpm/typescript@6.0.3/node_modules/typescript"
+            },
+            "typescript-eslint": {
+              "from": "typescript-eslint",
+              "version": "link:../../node_modules/.pnpm/typescript-eslint@8.70.0_eslint@10.10.0_typescript@6.0.3/node_modules/typescript-eslint"
+            },
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        },
+        {
+          "name": "@world-atlas/web",
+          "private": true,
+          "unsavedDependencies": {
+            "@eslint/js": {
+              "from": "@eslint/js",
+              "version": "link:../../node_modules/.pnpm/@eslint+js@10.0.1_eslint@10.10.0/node_modules/@eslint/js"
+            },
+            "eslint": {
+              "from": "eslint",
+              "version": "link:../../node_modules/.pnpm/eslint@10.10.0/node_modules/eslint"
+            },
+            "globals": {
+              "from": "globals",
+              "version": "link:../../node_modules/.pnpm/globals@17.12.0/node_modules/globals"
+            },
+            "prettier": {
+              "from": "prettier",
+              "version": "link:../../node_modules/.pnpm/prettier@3.9.6/node_modules/prettier"
+            },
+            "typescript": {
+              "from": "typescript",
+              "version": "link:../../node_modules/.pnpm/typescript@6.0.3/node_modules/typescript"
+            },
+            "typescript-eslint": {
+              "from": "typescript-eslint",
+              "version": "link:../../node_modules/.pnpm/typescript-eslint@8.70.0_eslint@10.10.0_typescript@6.0.3/node_modules/typescript-eslint"
+            },
+            "zod": {
+              "from": "zod",
+              "version": "link:../../node_modules/.pnpm/zod@4.6.5/node_modules/zod"
+            }
+          },
+          "version": "0.0.0"
+        }
+      ],
+      "install_exit": 0,
+      "directory": ".verification\\install-1789389654701\\b"
+    }
+  ],
+  "graph_equal": true,
+  "stale_lock_rejected": true,
+  "unsupported_node_rejected": true,
+  "checked_at_utc": "2026-09-14T12:41:42.417Z"
+}

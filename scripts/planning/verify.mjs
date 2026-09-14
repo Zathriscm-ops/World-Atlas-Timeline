@@ -174,6 +174,11 @@ if (through >= 5)
     const validate = (d) => {
       const sources = new Map(d.sources.map((s) => [s.id, s]));
       const citations = new Map(d.citations.map((c) => [c.id, c]));
+      for (const source of d.sources) {
+        assert.ok(source.title && source.creators.length && source.version && source.url);
+        assert.ok(source.reliability_rationale.length > 20);
+        assert.ok(Object.hasOwn(source, 'publication_date'));
+      }
       for (const c of d.citations) {
         const s = sources.get(c.source_id);
         assert.ok(s && s.reliability !== 'AI_GENERATED');
@@ -190,6 +195,9 @@ if (through >= 5)
       for (const r of d.revisions) assert.ok(d.contributors.some((c) => c.id === r.contributor_id));
     };
     validate(data);
+    const incompleteSource = structuredClone(data);
+    delete incompleteSource.sources[0].reliability_rationale;
+    assert.throws(() => validate(incompleteSource));
     assert.equal(data.claims.length, 6);
     assert.equal(data.citation_formats.length, 6);
     for (const mutation of [
@@ -284,7 +292,9 @@ if (through >= 8)
     const b = json('data/fixtures/planning/budgets.json');
     assert.equal(b.status, 'TARGETS_NOT_RUNTIME_MEASUREMENTS');
     for (const value of Object.values(b.limits)) assert.ok(Number.isFinite(value) && value >= 0);
-    assert.ok(b.limits.api_warm_p95_ms < 300);
+    assert.equal(b.limits.api_warm_p95_ms, 300);
+    assert.equal(b.api_warm_comparison, 'strictly_less_than');
+    assert.ok(299.999 < b.limits.api_warm_p95_ms);
     assert.ok(b.limits.temporal_branch_coverage_min >= 0.9);
     assert.ok(b.limits.project_branch_coverage_min >= 0.8);
     assert.equal(
@@ -345,12 +355,46 @@ if (through >= 10)
     assert.equal(e.installs[0].graph_sha256, e.installs[1].graph_sha256);
     assert.equal(e.installs[0].lock_sha256, e.installs[1].lock_sha256);
   });
+
+if (through >= 11)
+  check('M011-quality-toolchain-evidence', () => {
+    const ts = json('tsconfig.json').compilerOptions;
+    for (const flag of [
+      'strict',
+      'noUncheckedIndexedAccess',
+      'exactOptionalPropertyTypes',
+      'noImplicitReturns',
+      'noUnusedLocals',
+    ])
+      assert.equal(ts[flag], true);
+    assert.equal(ts.noEmit, true);
+    const e = json('docs/progress/M011_TOOLCHAIN.json');
+    assert.equal(e.result, 'PASS');
+    assert.equal(e.baseline_typecheck, 'PASS');
+    assert.equal(e.restored_typecheck, 'PASS');
+    for (const name of ['type_errors', 'lint_errors', 'format_errors']) {
+      assert.equal(e[name].detected, true);
+      assert.notEqual(e[name].exit, 0);
+    }
+    assert.deepEqual(e.type_errors.diagnostics, ['TS2322', 'TS18047']);
+    const installed = json('docs/progress/M011_INSTALL.json');
+    assert.equal(installed.result, 'PASS');
+    assert.equal(installed.graph_equal, true);
+    assert.equal(installed.installs[0].graph_sha256, installed.installs[1].graph_sha256);
+    assert.equal(installed.stale_lock_rejected, true);
+    assert.equal(installed.unsupported_node_rejected, true);
+    const audit = json('docs/progress/M011_AUDIT.json');
+    assert.equal(audit.result, 'PASS');
+    assert.equal(audit.vulnerabilities.high + audit.vulnerabilities.critical, 0);
+  });
+
 /* MODULE CHECKS */
 const report = {
   through,
   checked_at_utc: new Date().toISOString(),
   checks,
-  scope: 'Planning contracts and fixtures; no production GIS/runtime certification.',
+  scope:
+    'Planning contracts and recorded foundation evidence; no production GIS/application certification.',
 };
 fs.mkdirSync('docs/progress/checks', { recursive: true });
 if (process.argv.includes('--record'))

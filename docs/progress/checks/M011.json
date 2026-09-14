@@ -1,0 +1,51 @@
+{
+  "through": 11,
+  "checked_at_utc": "2026-09-14T12:45:47.228Z",
+  "checks": [
+    {
+      "id": "M001-preserved-evidence",
+      "result": "PASS"
+    },
+    {
+      "id": "M002-thirty-classifications",
+      "result": "PASS"
+    },
+    {
+      "id": "M003-chronology-contract",
+      "result": "PASS"
+    },
+    {
+      "id": "M004-uncertainty-semantics",
+      "result": "PASS"
+    },
+    {
+      "id": "M005-fact-provenance",
+      "result": "PASS"
+    },
+    {
+      "id": "M006-fail-closed-rights",
+      "result": "PASS"
+    },
+    {
+      "id": "M007-architecture-decisions",
+      "result": "PASS"
+    },
+    {
+      "id": "M008-measurable-budgets",
+      "result": "PASS"
+    },
+    {
+      "id": "M009-fresh-clone-evidence",
+      "result": "PASS"
+    },
+    {
+      "id": "M010-dependency-governance",
+      "result": "PASS"
+    },
+    {
+      "id": "M011-quality-toolchain-evidence",
+      "result": "PASS"
+    }
+  ],
+  "scope": "Planning contracts and recorded foundation evidence; no production GIS/application certification."
+}

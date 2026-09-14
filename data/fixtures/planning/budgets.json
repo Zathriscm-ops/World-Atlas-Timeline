@@ -20,7 +20,7 @@
     "initial_transfer_gzip_bytes": 3000000,
     "initial_js_gzip_bytes": 350000,
     "map_chunk_gzip_bytes": 1500000,
-    "api_warm_p95_ms": 299,
+    "api_warm_p95_ms": 300,
     "api_cold_p95_ms": 1500,
     "db_routine_p95_ms": 100,
     "db_spatial_p95_ms": 150,
@@ -62,5 +62,6 @@
     "forecast_alert_percent": 100,
     "billing_basis": "all project AWS cost before tax; no free tier assumption",
     "status": "ALLOCATION_NOT_PROVIDER_QUOTE"
-  }
+  },
+  "api_warm_comparison": "strictly_less_than"
 }

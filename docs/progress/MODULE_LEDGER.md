@@ -2,7 +2,7 @@
 
 Governing roadmap: [Gated Development Master Plan](../../GATED_DEVELOPMENT_MASTER_PLAN.md).
 
-Active module: **M011: IN_PROGRESS**. 
+Most recent completed module: **M011: PASS**. Next eligible module: **M012: NOT_STARTED**.
 
 Modules proceed sequentially within the user-authorized M002–M011 batch; M012 and later remain NOT_STARTED. Gates are evaluated sequentially; discussion in an earlier document does not earn a PASS.
 
@@ -18,7 +18,7 @@ Modules proceed sequentially within the user-authorized M002–M011 batch; M012 
 | M008 | Quality, Performance and Cost Budgets | PASS | [M008 verification](M008_VERIFICATION.md) |
 | M009 | Repository Architecture | PASS | [M009 verification](M009_VERIFICATION.md) |
 | M010 | Package and Dependency Governance | PASS | [M010 verification](M010_VERIFICATION.md) |
-| M011 | Code Quality Toolchain | IN_PROGRESS | Gate in progress |
+| M011 | Code Quality Toolchain | PASS | [M011 verification](M011_VERIFICATION.md) |
 | M012 | Continuous Integration Foundation | NOT_STARTED | — |
 | M013 | Local PostgreSQL/PostGIS Environment | NOT_STARTED | — |
 | M014 | Database Migration System | NOT_STARTED | — |
@@ -92,9 +92,9 @@ Modules proceed sequentially within the user-authorized M002–M011 batch; M012 
 | M082 | AWS Budget Guardrails | NOT_STARTED | — |
 | M083 | Terraform Foundation | NOT_STARTED | — |
 | M084 | Frontend Cloud Deployment | NOT_STARTED | — |
-| M085 | API Gateway Deployment | NOT_STARTED | — |
-| M086 | Lambda API Runtime | NOT_STARTED | — |
-| M087 | RDS PostgreSQL/PostGIS | NOT_STARTED | — |
+| M085 | API Gateway Deployment | NOT_STARTED | Prerequisite order: [ADR 0010](../adr/0010-infrastructure-and-gate-dependencies.md) |
+| M086 | Lambda API Runtime | NOT_STARTED | Prerequisite order: [ADR 0010](../adr/0010-infrastructure-and-gate-dependencies.md) |
+| M087 | RDS PostgreSQL/PostGIS | NOT_STARTED | Prerequisite order: [ADR 0010](../adr/0010-infrastructure-and-gate-dependencies.md) |
 | M088 | IAM Architecture | NOT_STARTED | — |
 | M089 | Secrets Management | NOT_STARTED | — |
 | M090 | Route 53 + TLS + Production Domain | NOT_STARTED | — |
