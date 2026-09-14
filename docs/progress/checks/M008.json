@@ -1,0 +1,39 @@
+{
+  "through": 8,
+  "checked_at_utc": "2026-09-14T12:31:49.650Z",
+  "checks": [
+    {
+      "id": "M001-preserved-evidence",
+      "result": "PASS"
+    },
+    {
+      "id": "M002-thirty-classifications",
+      "result": "PASS"
+    },
+    {
+      "id": "M003-chronology-contract",
+      "result": "PASS"
+    },
+    {
+      "id": "M004-uncertainty-semantics",
+      "result": "PASS"
+    },
+    {
+      "id": "M005-fact-provenance",
+      "result": "PASS"
+    },
+    {
+      "id": "M006-fail-closed-rights",
+      "result": "PASS"
+    },
+    {
+      "id": "M007-architecture-decisions",
+      "result": "PASS"
+    },
+    {
+      "id": "M008-measurable-budgets",
+      "result": "PASS"
+    }
+  ],
+  "scope": "Planning contracts and fixtures; no production GIS/runtime certification."
+}

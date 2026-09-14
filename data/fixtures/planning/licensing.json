@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "classifications": [
+    "PUBLIC DOMAIN",
+    "CC0",
+    "CC-BY",
+    "ODbL",
+    "RESTRICTED",
+    "UNKNOWN",
+    "INTERNAL TEST ONLY"
+  ],
+  "inventory": [
+    {
+      "id": "rights-pleiades",
+      "resource": "Pleiades Alexandria 727070",
+      "version": "page modified 2026-08-05",
+      "classification": "CC-BY",
+      "license_id": "CC-BY-3.0",
+      "evidence_url": "https://pleiades.stoa.org/places/727070",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "obligations": [
+        "credit creators and contributors",
+        "link original and license",
+        "identify modifications"
+      ],
+      "review": "PENDING_FIELD_AND_ATTRIBUTION_REVIEW",
+      "checked_at": "2026-09-14",
+      "production_eligible": false
+    },
+    {
+      "id": "rights-basemaps",
+      "resource": "Historical Basemaps",
+      "version": "ce213385c641acd9196b7d81177328f94496df00",
+      "classification": "RESTRICTED",
+      "license_id": "GPL-3.0 repository notice; variant and upstream scope unresolved",
+      "evidence_url": "https://github.com/aourednik/historical-basemaps/blob/ce213385c641acd9196b7d81177328f94496df00/LICENSE",
+      "license_url": "https://www.gnu.org/licenses/gpl-3.0.html",
+      "obligations": [
+        "resolve source-by-source rights and GPL data/application distribution scope",
+        "preserve upstream notice"
+      ],
+      "review": "QUARANTINED",
+      "checked_at": "2026-09-14",
+      "production_eligible": false
+    },
+    {
+      "id": "rights-awmc",
+      "resource": "AWMC geodata",
+      "version": "repository terms observed 2026-09-14; no release acquired",
+      "classification": "ODbL",
+      "license_id": "ODbL-1.0",
+      "evidence_url": "https://github.com/AWMC/geodata",
+      "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "obligations": [
+        "attribution",
+        "assess derivative/collective database and produced-work obligations",
+        "retain license and any required database offer"
+      ],
+      "review": "PENDING_DERIVATION_REVIEW",
+      "checked_at": "2026-09-14",
+      "production_eligible": false
+    },
+    {
+      "id": "rights-natural-earth",
+      "resource": "Natural Earth",
+      "version": "website terms observed 2026-09-14; no release acquired",
+      "classification": "PUBLIC DOMAIN",
+      "license_id": "Public domain declaration",
+      "evidence_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "obligations": [
+        "preserve provenance",
+        "verify chosen release and contents"
+      ],
+      "review": "PENDING_RELEASE_SELECTION",
+      "checked_at": "2026-09-14",
+      "production_eligible": false
+    },
+    {
+      "id": "rights-barrington",
+      "resource": "Barrington Atlas of the Greek and Roman World",
+      "version": "2000 edition",
+      "classification": "RESTRICTED",
+      "license_id": "No reusable map-content grant recorded",
+      "evidence_url": "https://assets.press.princeton.edu/about_pup/PUP100/book/8hTalbert.pdf",
+      "license_url": null,
+      "obligations": [
+        "obtain applicable permission before copying/digitizing map content"
+      ],
+      "review": "NO_CONTENT_PERMISSION",
+      "checked_at": "2026-09-14",
+      "production_eligible": false
+    },
+    {
+      "id": "rights-journal",
+      "resource": "Gretzinger et al. article",
+      "version": "10.1038/s41562-024-01888-7",
+      "classification": "CC-BY",
+      "license_id": "CC-BY-4.0",
+      "evidence_url": "https://www.nature.com/articles/s41562-024-01888-7",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "obligations": [
+        "attribute and indicate changes",
+        "check third-party credit exceptions"
+      ],
+      "review": "PENDING_ASSET_SCOPE_REVIEW",
+      "checked_at": "2026-09-14",
+      "production_eligible": false
+    },
+    {
+      "id": "rights-museum",
+      "resource": "NHM Hallstatt page",
+      "version": "accessed 2026-09-14",
+      "classification": "UNKNOWN",
+      "license_id": null,
+      "evidence_url": "https://www.nhm-wien.ac.at/hallstatt/en/site",
+      "license_url": null,
+      "obligations": [
+        "no bulk text or image reuse approved; citation only"
+      ],
+      "review": "NO_CONTENT_PERMISSION",
+      "checked_at": "2026-09-14",
+      "production_eligible": false
+    },
+    {
+      "id": "rights-unesco",
+      "resource": "UNESCO Silk Roads page",
+      "version": "accessed 2026-09-14",
+      "classification": "UNKNOWN",
+      "license_id": null,
+      "evidence_url": "https://www.unesco.org/en/silk-roads/about-silk-roads?hub=196704",
+      "license_url": null,
+      "obligations": [
+        "verify asset-specific reuse grant"
+      ],
+      "review": "NO_CONTENT_PERMISSION",
+      "checked_at": "2026-09-14",
+      "production_eligible": false
+    },
+    {
+      "id": "rights-fixtures",
+      "resource": "World Atlas planning fixtures",
+      "version": "schema 1",
+      "classification": "INTERNAL TEST ONLY",
+      "license_id": "Project internal fixture policy",
+      "evidence_url": "DATA_LICENSING.md",
+      "license_url": null,
+      "obligations": [
+        "never expose as reviewed historical data"
+      ],
+      "review": "INTERNAL_ONLY",
+      "checked_at": "2026-09-14",
+      "production_eligible": false
+    }
+  ],
+  "allowed_classes": [
+    "PUBLIC DOMAIN",
+    "CC0",
+    "CC-BY",
+    "ODbL"
+  ],
+  "required_fields": [
+    "source_id",
+    "version",
+    "license_id",
+    "evidence_url",
+    "attribution",
+    "lineage_review",
+    "rights_review",
+    "historical_review",
+    "reviewer",
+    "content_hash"
+  ],
+  "fixture_status": "SYNTHETIC_RIGHTS_DECISION_TESTS"
+}

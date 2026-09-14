@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "year_cases": [
+    {
+      "year": -9999,
+      "display": "10000 BCE"
+    },
+    {
+      "year": -499,
+      "display": "500 BCE"
+    },
+    {
+      "year": -26,
+      "display": "27 BCE"
+    },
+    {
+      "year": -2,
+      "display": "3 BCE"
+    },
+    {
+      "year": -1,
+      "display": "2 BCE"
+    },
+    {
+      "year": 0,
+      "display": "1 BCE"
+    },
+    {
+      "year": 1,
+      "display": "1 CE"
+    },
+    {
+      "year": 2,
+      "display": "2 CE"
+    },
+    {
+      "year": 117,
+      "display": "117 CE"
+    },
+    {
+      "year": 500,
+      "display": "500 CE"
+    }
+  ],
+  "invalid_inputs": [
+    "0 BCE",
+    "0 CE",
+    "-1 BCE",
+    "-1 CE",
+    "1.5 CE",
+    "117",
+    "tomorrow"
+  ],
+  "interval_cases": [
+    {
+      "id": "exact-year",
+      "start": 117,
+      "end": 118,
+      "active": [
+        117
+      ],
+      "inactive": [
+        116,
+        118
+      ]
+    },
+    {
+      "id": "bce-ce",
+      "start": 0,
+      "end": 2,
+      "active": [
+        0,
+        1
+      ],
+      "inactive": [
+        -1,
+        2
+      ]
+    },
+    {
+      "id": "mvp-domain",
+      "start": -499,
+      "end": 501,
+      "active": [
+        -499,
+        0,
+        1,
+        500
+      ],
+      "inactive": [
+        -500,
+        501
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "kind": "approximate",
+      "year": -2999,
+      "precision": "year",
+      "bounds": null,
+      "original": "~3000 BCE",
+      "display": "c. 3000 BCE"
+    },
+    {
+      "kind": "occurrence_window",
+      "earliest": -1199,
+      "latest": -1099,
+      "precision": "year",
+      "original": "1200–1100 BCE",
+      "display": "1200–1100 BCE"
+    },
+    {
+      "kind": "duration",
+      "start": -1199,
+      "end": -1098,
+      "precision": "year",
+      "original": "1200–1100 BCE (inclusive years)",
+      "display": "1200–1100 BCE (duration)"
+    },
+    {
+      "kind": "century",
+      "number": 5,
+      "era": "BCE",
+      "start": -499,
+      "end": -399,
+      "original": "5th century BCE",
+      "display": "5th century BCE"
+    },
+    {
+      "kind": "qualified_period",
+      "period": "5th century BCE",
+      "qualifier": "late",
+      "bounds": null,
+      "original": "late 5th century BCE",
+      "display": "late 5th century BCE"
+    },
+    {
+      "kind": "unknown",
+      "bounds": null,
+      "original": "unknown",
+      "display": "Date unknown"
+    }
+  ],
+  "uncertain_duration": {
+    "start_min": 100,
+    "start_max": 110,
+    "end_min": 150,
+    "end_max": 160,
+    "possible": [
+      100,
+      160
+    ],
+    "certain": [
+      110,
+      150
+    ]
+  },
+  "playback_unit": "historical_years_per_real_second"
+}

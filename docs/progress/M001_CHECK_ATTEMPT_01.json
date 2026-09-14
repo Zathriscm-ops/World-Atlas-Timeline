@@ -1,0 +1,54 @@
+{
+    "module":  "M001",
+    "checked_at_utc":  "2026-09-14T11:59:43.4111782Z",
+    "checks":  [
+                   {
+                       "id":  "M001-DOC-01",
+                       "result":  "PASS",
+                       "evidence":  "Required charter outputs and adoption/evidence documents exist."
+                   },
+                   {
+                       "id":  "M001-DOC-02",
+                       "result":  "PASS",
+                       "evidence":  "All six Module 01 product-charter items are covered by named sections."
+                   },
+                   {
+                       "id":  "M001-DOC-03",
+                       "result":  "PASS",
+                       "evidence":  "88 classified entries: 56 REQUIRED, 20 DEFERRED, 12 REJECTED."
+                   },
+                   {
+                       "id":  "M001-DOC-04",
+                       "result":  "PASS",
+                       "evidence":  "Scope traceability covers M001–M116 and M117–M149; missing required=; missing deferred="
+                   },
+                   {
+                       "id":  "M001-DOC-05",
+                       "result":  "FAIL",
+                       "evidence":  "All 149 modules are recorded once in sequence; M002–M149 remain NOT_STARTED."
+                   },
+                   {
+                       "id":  "M001-REG-01",
+                       "result":  "PASS",
+                       "evidence":  "Gated roadmap exactly matches the user attachment SHA-256."
+                   },
+                   {
+                       "id":  "M001-REG-02",
+                       "result":  "FAIL",
+                       "evidence":  "Archived prior proposal exactly matches its previously verified SHA-256."
+                   },
+                   {
+                       "id":  "M001-DOC-06",
+                       "result":  "PASS",
+                       "evidence":  "Markdown fences/encoding/local artifact links checked. "
+                   },
+                   {
+                       "id":  "M001-SCOPE-01",
+                       "result":  "PASS",
+                       "evidence":  "No application, package, database or infrastructure implementation was introduced."
+                   }
+               ],
+    "runtime_suites":  "NOT RUN: no runtime/toolchain exists; documentation-only module",
+    "source_sha256":  "6EB5D81750072AC32FA098ED5A66D73EFD4357CABF8C0561E39168FD551207B4",
+    "archive_sha256":  "7E180668416600DE8CC2D63DDAA8E35EB8C68A8BDE8FBFCF1A64B9A02C490E5B"
+}

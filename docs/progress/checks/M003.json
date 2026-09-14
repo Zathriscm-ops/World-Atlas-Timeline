@@ -1,0 +1,19 @@
+{
+  "through": 3,
+  "checked_at_utc": "2026-09-14T12:12:16.995Z",
+  "checks": [
+    {
+      "id": "M001-preserved-evidence",
+      "result": "PASS"
+    },
+    {
+      "id": "M002-thirty-classifications",
+      "result": "PASS"
+    },
+    {
+      "id": "M003-chronology-contract",
+      "result": "PASS"
+    }
+  ],
+  "scope": "Planning contracts and fixtures; no production GIS/runtime certification."
+}

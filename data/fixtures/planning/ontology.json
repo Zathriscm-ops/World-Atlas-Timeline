@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "types": [
+    "polity",
+    "people",
+    "ethnic_group",
+    "archaeological_culture",
+    "civilization",
+    "settlement",
+    "event",
+    "network",
+    "religion",
+    "language",
+    "geographic_region"
+  ],
+  "cases": [
+    {
+      "id": "ontology-01",
+      "label": "Roman Republic",
+      "type": "polity",
+      "representation_role": "control",
+      "rationale": "Separate political continuity from regime labels.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-02",
+      "label": "Roman Empire",
+      "type": "polity",
+      "representation_role": "control",
+      "rationale": "Umbrella identity; subdivisions need scoped relationships.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-03",
+      "label": "Kingdom of Macedon",
+      "type": "polity",
+      "representation_role": "control",
+      "rationale": "Dynasty or ruler change alone does not imply a new identity.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-04",
+      "label": "Carthaginian state",
+      "type": "polity",
+      "representation_role": "control",
+      "rationale": "Separate from the settlement named Carthage.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-05",
+      "label": "Visigothic kingdom",
+      "type": "polity",
+      "representation_role": "control",
+      "rationale": "Separate political institution from the people labelled Visigoths.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-06",
+      "label": "Visigoths",
+      "type": "people",
+      "representation_role": "presence",
+      "rationale": "Ethnonym and group continuity require contextual evidence.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-07",
+      "label": "Goths",
+      "type": "people",
+      "representation_role": "presence",
+      "rationale": "Broad heterogeneous identity; no single timeless polygon.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-08",
+      "label": "Franks",
+      "type": "people",
+      "representation_role": "presence",
+      "rationale": "People and later polities get distinct scoped identities.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-09",
+      "label": "Amazigh peoples",
+      "type": "ethnic_group",
+      "representation_role": "presence",
+      "rationale": "Self-identification, exonyms and period are explicit; no biological essence.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-10",
+      "label": "Hallstatt culture",
+      "type": "archaeological_culture",
+      "representation_role": "distribution",
+      "rationale": "Material assemblage classification is not an ethnic or political border.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-11",
+      "label": "La Tène culture",
+      "type": "archaeological_culture",
+      "representation_role": "distribution",
+      "rationale": "Keep artifact distribution distinct from language and identity.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-12",
+      "label": "Corded Ware culture",
+      "type": "archaeological_culture",
+      "representation_role": "distribution",
+      "rationale": "Analytical archaeological grouping, not a unified state.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-13",
+      "label": "Maya civilization",
+      "type": "civilization",
+      "representation_role": "cultural_extent",
+      "rationale": "Multiple polities and periods may coexist inside the analytical category.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-14",
+      "label": "Indus Valley Civilization",
+      "type": "civilization",
+      "representation_role": "cultural_extent",
+      "rationale": "Reconstruction and scholarly periodization require sourcing.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-15",
+      "label": "Carthage",
+      "type": "settlement",
+      "representation_role": "site",
+      "rationale": "Occupation episodes and polity identity remain separate.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-16",
+      "label": "Rome",
+      "type": "settlement",
+      "representation_role": "site",
+      "rationale": "Place identity is distinct from Roman political institutions.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-17",
+      "label": "Athens",
+      "type": "settlement",
+      "representation_role": "site",
+      "rationale": "Athenian polity is a separate entity if modeled.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-18",
+      "label": "Byzantium / Constantinople",
+      "type": "settlement",
+      "representation_role": "site",
+      "rationale": "Temporal names on a justified continuous settlement identity.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-19",
+      "label": "Alexandria",
+      "type": "settlement",
+      "representation_role": "site",
+      "rationale": "Disambiguate location from other settlements with the same name.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-20",
+      "label": "Battle of Actium",
+      "type": "event",
+      "representation_role": "event_location",
+      "rationale": "Occurrence dating is not the same as duration.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-21",
+      "label": "Second Punic War",
+      "type": "event",
+      "representation_role": "event_location",
+      "rationale": "Duration and multiple locations/participants.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-22",
+      "label": "Foundation of Alexandria",
+      "type": "event",
+      "representation_role": "event_location",
+      "rationale": "Foundation claim is separate from earliest attested occupation.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-23",
+      "label": "Silk Roads",
+      "type": "network",
+      "representation_role": "route",
+      "rationale": "Interconnected routes and changing nodes, not a single immutable road.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-24",
+      "label": "Indian Ocean trade network",
+      "type": "network",
+      "representation_role": "route",
+      "rationale": "Connections and activity intervals, not sovereign territory.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-25",
+      "label": "Christianity",
+      "type": "religion",
+      "representation_role": "influence",
+      "rationale": "Communities and influence need explicit measures and dates.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-26",
+      "label": "Buddhism",
+      "type": "religion",
+      "representation_role": "influence",
+      "rationale": "Distribution and institutional relations may overlap other religions.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-27",
+      "label": "Latin",
+      "type": "language",
+      "representation_role": "distribution",
+      "rationale": "Attestation, use and official status are separate predicates.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-28",
+      "label": "Greek",
+      "type": "language",
+      "representation_role": "distribution",
+      "rationale": "Language varieties and periods can extend the vocabulary.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-29",
+      "label": "Gaul",
+      "type": "geographic_region",
+      "representation_role": "reference_extent",
+      "rationale": "Named region definitions vary; not automatically an ethnic/political entity.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    },
+    {
+      "id": "ontology-30",
+      "label": "Mediterranean basin",
+      "type": "geographic_region",
+      "representation_role": "reference_extent",
+      "rationale": "Physical reference region; no inferred political hierarchy.",
+      "record_status": "EDITORIAL_CLASSIFICATION_FIXTURE",
+      "historical_publication_eligible": false
+    }
+  ]
+}

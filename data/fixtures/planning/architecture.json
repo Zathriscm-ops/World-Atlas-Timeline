@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "decisions": [
+    {
+      "id": "frontend",
+      "choice": "React + TypeScript + Vite",
+      "adr": "docs/adr/0007-web-and-api-stack.md",
+      "reason": "Required interactive map/timeline with shared typed contracts.",
+      "implementation_module": "M016"
+    },
+    {
+      "id": "mapping",
+      "choice": "MapLibre GL JS",
+      "adr": "docs/adr/0007-web-and-api-stack.md",
+      "reason": "WebGL vector layers, styling and feature interaction; no commercial map SDK dependency.",
+      "implementation_module": "M016"
+    },
+    {
+      "id": "backend",
+      "choice": "TypeScript + Fastify modular monolith",
+      "adr": "docs/adr/0007-web-and-api-stack.md",
+      "reason": "One API with explicit route/service/data boundaries and local request injection tests.",
+      "implementation_module": "M040"
+    },
+    {
+      "id": "database",
+      "choice": "PostgreSQL + PostGIS",
+      "adr": "docs/adr/0008-data-and-validation-stack.md",
+      "reason": "Relational evidence, historical intervals and indexed geographic queries.",
+      "implementation_module": "M013"
+    },
+    {
+      "id": "validation",
+      "choice": "Zod 4; derived JSON Schema",
+      "adr": "docs/adr/0008-data-and-validation-stack.md",
+      "reason": "Runtime validation and inferred TypeScript types from one contract.",
+      "implementation_module": "M009"
+    },
+    {
+      "id": "unit-tests",
+      "choice": "Vitest",
+      "adr": "docs/adr/0009-testing-and-workspace.md",
+      "reason": "Domain and API behavior checks integrated with TypeScript tooling.",
+      "implementation_module": "M012"
+    },
+    {
+      "id": "component-tests",
+      "choice": "React Testing Library",
+      "adr": "docs/adr/0009-testing-and-workspace.md",
+      "reason": "Test visible accessible behavior rather than component internals.",
+      "implementation_module": "M016"
+    },
+    {
+      "id": "browser-tests",
+      "choice": "Playwright",
+      "adr": "docs/adr/0009-testing-and-workspace.md",
+      "reason": "Real browser map, keyboard and viewport regression.",
+      "implementation_module": "M016"
+    },
+    {
+      "id": "workspace",
+      "choice": "pnpm 10.34.5; Node 24.18.0",
+      "adr": "docs/adr/0009-testing-and-workspace.md",
+      "reason": "Pinned workspace installs with isolated package boundaries.",
+      "implementation_module": "M009"
+    },
+    {
+      "id": "quality",
+      "choice": "TypeScript 6.0.3; ESLint; Prettier",
+      "adr": "docs/adr/0009-testing-and-workspace.md",
+      "reason": "Strict type and automated formatting/lint gates using compatible versions.",
+      "implementation_module": "M011"
+    },
+    {
+      "id": "cloud",
+      "choice": "AWS S3/CloudFront; API Gateway/Lambda; private RDS",
+      "adr": "docs/adr/0010-infrastructure-and-gate-dependencies.md",
+      "reason": "Meet the v1.0 deployment scope with one API compute unit.",
+      "implementation_module": "M081"
+    },
+    {
+      "id": "infrastructure",
+      "choice": "Terraform",
+      "adr": "docs/adr/0010-infrastructure-and-gate-dependencies.md",
+      "reason": "Reviewable changes, state and repeatable environment resources.",
+      "implementation_module": "M083"
+    }
+  ],
+  "installed_by_m007": [],
+  "reordered_future_group": [
+    "M087",
+    "M086",
+    "M085"
+  ],
+  "no_current_order_exception": true
+}

@@ -1,0 +1,18 @@
+{
+  "name": "world-atlas",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": "24.18.0"
+  },
+  "scripts": {
+    "test:planning": "node scripts/planning/verify.mjs 8",
+    "test:repository": "node scripts/repository/smoke.mjs"
+  },
+  "devDependencies": {
+    "zod": "4.6.5"
+  }
+}

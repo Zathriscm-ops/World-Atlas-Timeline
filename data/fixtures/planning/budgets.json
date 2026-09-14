@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "status": "TARGETS_NOT_RUNTIME_MEASUREMENTS",
+  "profiles": {
+    "desktop": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "network_mbps": 10,
+      "rtt_ms": 80,
+      "cpu_slowdown": 1
+    },
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "network_mbps": 10,
+      "rtt_ms": 80,
+      "cpu_slowdown": 4
+    }
+  },
+  "limits": {
+    "initial_load_p95_ms": 5000,
+    "initial_transfer_gzip_bytes": 3000000,
+    "initial_js_gzip_bytes": 350000,
+    "map_chunk_gzip_bytes": 1500000,
+    "api_warm_p95_ms": 299,
+    "api_cold_p95_ms": 1500,
+    "db_routine_p95_ms": 100,
+    "db_spatial_p95_ms": 150,
+    "seek_p95_ms": 100,
+    "selection_p95_ms": 150,
+    "frame_p95_ms": 33.4,
+    "api_error_rate_max": 0.01,
+    "temporal_branch_coverage_min": 0.9,
+    "project_line_coverage_min": 0.8,
+    "project_branch_coverage_min": 0.8,
+    "invalid_published_geometry_max": 0,
+    "broken_relationship_max": 0,
+    "unsourced_published_claim_max": 0,
+    "unreviewed_ai_claim_max": 0
+  },
+  "workload": {
+    "cold_page_runs_per_profile": 30,
+    "api_measured_requests_per_endpoint": 1000,
+    "api_warmup_requests": 100,
+    "api_concurrency": 10,
+    "api_cold_samples": 30,
+    "entities": 1000,
+    "temporal_states": 10000,
+    "vertices": 100000,
+    "playback_seconds": 30,
+    "playback_years_per_real_second": [
+      1,
+      10,
+      100
+    ],
+    "percentile": "nearest_rank_no_outlier_removal"
+  },
+  "cost": {
+    "currency": "USD",
+    "monthly_total_ceiling": 150,
+    "monthly_allocations": {
+      "production": 100,
+      "staging": 25,
+      "development": 0,
+      "contingency": 25
+    },
+    "actual_alert_percent": [
+      50,
+      80,
+      100
+    ],
+    "forecast_alert_percent": 100,
+    "billing_basis": "all project AWS cost before tax; no free tier assumption",
+    "status": "ALLOCATION_NOT_PROVIDER_QUOTE"
+  }
+}

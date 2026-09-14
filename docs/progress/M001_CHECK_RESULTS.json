@@ -1,0 +1,66 @@
+{
+    "module":  "M001",
+    "checked_at_utc":  "2026-09-14T12:00:28.3384019Z",
+    "checks":  [
+                   {
+                       "id":  "M001-DOC-01",
+                       "result":  "PASS",
+                       "evidence":  "Required charter outputs and adoption/evidence documents exist."
+                   },
+                   {
+                       "id":  "M001-DOC-02",
+                       "result":  "PASS",
+                       "evidence":  "All six Module 01 product-charter items are covered by named sections."
+                   },
+                   {
+                       "id":  "M001-DOC-03",
+                       "result":  "PASS",
+                       "evidence":  "88 classified entries: 56 REQUIRED, 20 DEFERRED, 12 REJECTED."
+                   },
+                   {
+                       "id":  "M001-DOC-04",
+                       "result":  "PASS",
+                       "evidence":  "Scope traceability covers M001–M116 and M117–M149; missing required=; missing deferred="
+                   },
+                   {
+                       "id":  "M001-DOC-05",
+                       "result":  "PASS",
+                       "evidence":  "149 ordered module rows parsed with CRLF-aware anchors; zero downstream modules started."
+                   },
+                   {
+                       "id":  "M001-REG-01",
+                       "result":  "PASS",
+                       "evidence":  "Gated roadmap exactly matches the user attachment SHA-256."
+                   },
+                   {
+                       "id":  "M001-REG-02",
+                       "result":  "PASS",
+                       "evidence":  "Actual archive SHA-256 matches the full pre-edit hash recorded before adoption."
+                   },
+                   {
+                       "id":  "M001-DOC-06",
+                       "result":  "PASS",
+                       "evidence":  "Markdown fences/encoding/local artifact links checked. "
+                   },
+                   {
+                       "id":  "M001-SCOPE-01",
+                       "result":  "PASS",
+                       "evidence":  "No application, package, database or infrastructure implementation was introduced."
+                   }
+               ],
+    "runtime_suites":  "NOT RUN: no runtime/toolchain exists; documentation-only module",
+    "source_sha256":  "6EB5D81750072AC32FA098ED5A66D73EFD4357CABF8C0561E39168FD551207B4",
+    "archive_sha256":  "7E180668416600DE8CC2D63DDAA8E35EB8C68A8BDE8FBFCF1A64B9A02C490E5B",
+    "check_correction":  "Initial check harness omitted CRLF handling for ledger rows and transcribed an incomplete expected archive hash. Both checks were corrected against original evidence and rerun; no archive or module content was changed to make them pass.",
+    "final_completion_check":  {
+                                   "checked_at_utc":  "2026-09-14T12:02:39.2329418Z",
+                                   "result":  "PASS",
+                                   "module_count":  149,
+                                   "pass_modules":  [
+                                                        "M001"
+                                                    ],
+                                   "not_started_count":  148,
+                                   "markdown_tables_and_links":  "PASS",
+                                   "sources_preserved":  "PASS"
+                               }
+}
