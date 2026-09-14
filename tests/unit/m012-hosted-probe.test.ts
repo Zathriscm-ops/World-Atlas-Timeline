@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
 
-test('intentional hosted CI gate probe', () => {
-  expect('blocked').toBe('passing');
+test('hosted CI gate recovery probe', () => {
+  expect('passing').toBe('passing');
 });
